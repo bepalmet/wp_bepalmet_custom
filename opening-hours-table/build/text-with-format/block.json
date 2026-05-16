@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "bepalmet-custom/text-with-format",
+  "category": "text",
+  "description": "Sub-component to render and edit Rich Text for Opening Hours Settings",
+  "title": "Text With Format",
+  "version": "1.0.0",
+  "supports": {
+    "html": true,
+    "anchor": true,
+    "custom-fields": true
+  },
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html"
+    }
+  },
+  "textdomain": "text-with-format",
+  "editorScript": "file:./index.js",
+  "style": "file:./styles.scss"
+}

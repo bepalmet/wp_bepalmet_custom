@@ -1,0 +1,23 @@
+{
+	"name": "bepalmet_custom-opening_hours",
+	"version": "1.0.0",
+	"description": "Display Opening Hours",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php --blocks-manifest",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start --webpack-copy-php --blocks-manifest"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^31.1.0"
+	},
+	"dependencies": {
+		"@wordpress/core-data": "^7.36.0",
+		"@wordpress/interface": "^9.21.0"
+	}
+}

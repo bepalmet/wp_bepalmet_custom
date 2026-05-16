@@ -1,0 +1,144 @@
+@layer opening-hours-table {
+
+    .bepalmet-custom.opening-hours-table.render.public.opening-hours-table-wrap {
+        background-color: whitesmoke;
+        color: black;
+        text-align: center;
+        width: 100%;
+        overflow: auto;
+        font-size: medium;
+    }
+    table.bepalmet-custom.opening-hours-table.render.public {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @layer outer-table {
+
+        table.bepalmet-custom.opening-hours-table.render.public.outer-table {
+            border: 3px solid black;
+        }
+
+        .bepalmet-custom.opening-hours-table.render.public.outer-table {
+            border-collapse: collapse;
+        }
+        
+        tr.bepalmet-custom.outer-table td.outer-table {
+            border-right: 3px solid black;
+        }
+
+        tr.bepalmet-custom.outer-table td.outer-table:last-child {
+            border-right: none;
+        }
+
+        .bepalmet-custom.outer-table.locations-inner {
+            width: calc( 100% / sibling-count() );
+            min-width: 18rem;
+            table-layout: fixed;
+            height: 100%;
+        }
+
+    }
+
+    @layer panel {
+
+        .bepalmet-custom.small-panel {
+            .render-table.inner-table {
+                color: black;
+                text-align: center;
+                width: 100%;
+                table-layout: fixed;
+            }
+        }
+        .bepalmet-custom.opening-hours-table-header {
+            font-size: x-large;
+            font-weight: bolder;
+            text-align: center;
+            padding-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+    }
+
+    @layer locations-inner {
+
+        @layer inner-table {
+
+            @layer contacts {
+
+                td.bepalmet-custom.opening-hours-table.render.public.inner-table.body.contacts {
+
+                    .label {
+                        margin-top: 1rem;
+                        margin-right: auto;
+                        margin-left: 5%;
+                        width: fit-content;
+                        min-width: 50%;
+                        max-width: 90%;
+                        text-align: left;
+                    }
+
+                    .value {
+                        margin-bottom: 1rem;
+                        margin-left: auto;
+                        margin-right: 5%;
+                        width: fit-content;
+                        min-width: 50%;
+                        max-width: 90%;
+                        text-align: right;
+                    }
+
+                }
+
+                @layer times {
+
+                    .bepalmet-custom.opening-hours-table.render.public.inner-table.body.openings.one-day {  
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+                        flex-wrap: wrap;
+                        margin-right: 0.25rem;
+                    }
+
+                    .bepalmet-custom.opening-hours-table.render.public.inner-table.body.openings.one-day.weekday-name {
+                        font-weight: bolder;
+                    }
+
+                    .bepalmet-custom.opening-hours-table.render.public.inner-table.body.openings.one-day.times {
+                        flex-direction: column;
+                        margin-left: 0.25rem;
+
+                        .closed-message {
+                            font-style: italic;
+                        }
+                    }
+
+                }
+
+            }
+
+            table.bepalmet-custom.opening-hours-table.render.public.inner-table {
+                margin-top: 0.5rem;
+                border-collapse: collapse;
+            }
+
+            td.bepalmet-custom.opening-hours-table.render.public.inner-table {
+                border: 1px solid black;
+                width: 50%;
+            }
+
+            tr.bepalmet-custom.opening-hours-table.render.public.inner-table.body {
+                height: 100%;
+            }
+
+        }
+
+        div.bepalmet-custom.render.public.one-day {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+    }
+
+}

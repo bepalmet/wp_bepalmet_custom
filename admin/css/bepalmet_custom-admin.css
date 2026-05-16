@@ -1,0 +1,25 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.opening-hours-settings-block-editor.block-editor .js-error {
+    font-style: italic;
+    font-size: larger;
+    margin-top: 2rem;
+}
+
+div.bepalmet-custom.body-wrap {
+    border-top: 1px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
+}
+
+form.bepalmet-custom.import-export.upload-form div.import-button-wrap {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+form.bepalmet-custom.import-export.upload-form div.import-button-wrap input.submit-file {
+    margin: 0.5rem 0rem;
+}

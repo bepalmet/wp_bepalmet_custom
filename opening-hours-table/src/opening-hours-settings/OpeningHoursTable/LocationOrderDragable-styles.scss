@@ -1,0 +1,20 @@
+.locations-order {
+
+    &.order-wrap {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        div.draggables {
+            margin-left: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        button.save-order {
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
+        }
+
+    }
+
+}

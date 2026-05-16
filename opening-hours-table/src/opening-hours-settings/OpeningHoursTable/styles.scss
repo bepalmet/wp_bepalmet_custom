@@ -1,0 +1,22 @@
+/*
+*  Mostly for EditOpeningHours and final table
+*/
+
+@use './OpeningHoursTable-styles.scss' as *;
+@use './EditOpeningHours-styles.scss' as *;
+
+.opening-hours-settings-places {
+    margin-right: 1rem;
+}
+
+button.bepalmet-custom.navigator {
+
+    &.back-button, &.screen-button {
+        box-shadow: none;
+    }
+
+}
+
+div.bepalmet-custom.navigator.edit-screen-wrap {
+    display: flex;
+}

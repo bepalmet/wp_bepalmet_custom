@@ -1,0 +1,60 @@
+@use "~@wordpress/base-styles/colors" as *;
+@use "~@wordpress/base-styles/variables" as *;
+@use "~@wordpress/base-styles/mixins" as *;
+@use "~@wordpress/base-styles/breakpoints" as *;
+@use "~@wordpress/base-styles/animations" as *;
+@use "~@wordpress/base-styles/z-index" as *;
+
+@use "./Sidebar/styles.scss" as *;
+@use "./Header/styles.scss" as *;
+@use "./OpeningHoursTable/styles.scss";
+
+$editor-font: 'sans-serif';
+
+.bepalmet-custom-settings {
+	height: 100%;
+}
+
+html.wp-toolbar {
+	background: $white;
+}
+
+body.block-editor-page {
+	@include wp-admin-reset( ".block-editor" );
+}
+
+.opening-hours-settings-block-editor {
+	min-height: calc(100vh - 32px);
+}
+
+.editor-styles-wrapper {
+	width: 100%;
+
+	@include break-small {
+		width: calc(100% - #{$sidebar-width});
+	}
+	font-family: $editor-font;
+	font-size: $editor-font-size;
+	line-height: $editor-line-height;
+	color: $gray-900;
+}
+
+.opening-hours-settings-block-editor,
+.components-modal__frame {
+	@include reset;
+}
+
+.block-editor-block-breadcrumb {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  padding: 5px;
+  background-color: #fff;
+  width: 100%;
+  border-top: 1px solid #dddddd;
+}
+
+.opening-hours-settings-places.is-loading {
+	opacity: 0.5;
+	pointer-events: none;
+}

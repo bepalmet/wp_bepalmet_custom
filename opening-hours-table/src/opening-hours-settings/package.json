@@ -1,0 +1,9 @@
+{
+  "name": "opening-hours-settings",
+  "version": "1.0.0",
+  "exports": "./index.js",
+
+	"dependencies": {
+		"@wordpress/core-data": "^7.36.0"
+  }
+}

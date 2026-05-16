@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "bepalmet-custom/opening-hours-block",
+	"category": "widgets",
+	"description": "bepalmet-custom block to render the opening hours table",
+	"title": "Opening hours",
+	"version": "1.0.0",
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"custom-fields": false
+	},
+	"usesContext": [ "postId", "postType" ],
+	"attributes": {
+		"content": {
+			"type": "string",
+			"default": "Loading..."
+		}
+	},
+	"textdomain": "bepalmet_block",
+	"editorScript": "file:./index.js",
+	"style": "file:./styles.scss",
+	"render": "file:./render.php"
+}

@@ -1,0 +1,62 @@
+@use "~@wordpress/base-styles/colors" as *;
+@use "~@wordpress/base-styles/variables" as *;
+@use "~@wordpress/base-styles/mixins" as *;
+
+.opening-hours-settings-header {
+	align-items: center;
+	background: $white;
+	border-bottom: 1px solid $gray-200;
+	display: flex;
+	height: $header-height;
+	justify-content: space-between;
+	left: 0;
+	// Stick the toolbar to the top, because the admin bar is not fixed on mobile.
+	position: sticky;
+	right: 0;
+	top: 0;
+	// z-index: z-index(".opening-hours-settings-header");
+
+	// On mobile, the main content area has to scroll,
+	// otherwise you can invoke the over-scroll bounce on the non-scrolling container.
+	@include break-small {
+		padding: $grid-unit-30;
+		position: sticky;
+		top: $admin-bar-height-big;
+	}
+
+	@include break-medium() {
+		top: $admin-bar-height;
+	}
+}
+
+@include editor-left(".opening-hours-settings-header");
+
+.opening-hours-settings-header__title {
+	font-size: 16px;
+	padding: 0 20px;
+	margin-right: auto;
+}
+
+.loader-wrap {
+	display: none;
+    position: relative;
+    align-items: center;
+
+	&.is-loading {
+		display: block;
+	}
+}
+
+.loader {
+    border: 0.5rem solid #f3f3f3;
+    border-top: 0.5rem solid #3498db;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

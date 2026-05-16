@@ -1,0 +1,109 @@
+/**
+*   Styles for OpeningHoursTable
+*/
+
+.render-table.opening-hours-table-wrap {
+	background-color: whitesmoke;
+	color: black;
+    text-align: center;
+    width: 100%;
+    overflow: scroll;
+    font-size: small;
+}
+
+.render-table table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.render-table.weekday-name {
+    font-weight: bolder;
+}
+
+.render-table.closed-message {
+    font-style: italic;
+}
+
+@layer outer-table {
+
+    table.render-table.outer-table {
+        border: 3px solid black;
+    }
+
+    .render-table.outer-table {
+        border-collapse: collapse;
+    }
+    
+    tr.outer-table td.outer-table {
+        border-right: 3px solid black;
+    }
+
+    tr.outer-table td.outer-table:last-child {
+        border-right: none;
+    }
+
+    .outer-table.locations-inner {
+        width: calc( 100% / sibling-count() );
+        min-width: 18rem;
+        table-layout: fixed;
+        height: 100%;
+    }
+
+}
+
+.small-panel {
+    .render-table.inner-table {
+        color: black;
+        text-align: center;
+        width: 100%;
+        table-layout: fixed;
+    }
+}
+
+.render-table.opening-hours-table-header {
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+@layer inner-table, locations-inner;
+
+@layer locations-inner {
+
+    @layer inner-table {
+
+        td.render-table.inner-table {
+            width: 50%;
+        }
+
+        table.render-table.inner-table {
+            margin-top: 0.5rem;
+        }
+
+        .render-table.inner-table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        div.render-table.contact.label {
+            margin-top: 2rem;
+            margin: 0 5%;
+            text-align: left;
+        }
+
+        div.render-table.contact.value {
+            margin: 0 5%;
+            text-align: right;
+        }
+
+    }
+
+    div.one-day.outer {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+}

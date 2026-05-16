@@ -1,0 +1,129 @@
+/**
+*   styles for EditOpeningHours
+*/
+
+.drag-hint {
+    font-style: italic;
+    font-size: small;
+    margin-bottom: 2%;
+}
+
+.opening-hours-table-edit.modal {
+    
+    button {
+        margin: 0 1rem;
+    }
+    
+}
+
+.opening-hours-table-edit.header {
+    margin: 0.5rem 1rem;
+}
+
+.opening-hours-table-edit.header-wrap {
+    display: flex;
+
+    .heading-wrap {
+        float: left;
+        margin-right: auto;
+        margin-left: 0;
+        order: 1;
+    }
+
+    .button-edit {
+        float: right;
+        order: 2;
+    }
+
+    .button-delete {
+        float: right;
+        order: 3;
+    }
+
+}
+
+.opening-hours-table-edit {
+
+    &.panel.body {
+        margin: 1rem 0.5rem;
+
+        > div {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        button.edit {
+            justify-self: flex-end;
+            margin-right: 0.5rem;
+        }
+
+        button.delete {
+            justify-self: flex-end;
+        }
+
+        .one-time {
+            width: 100%;
+        }
+
+        .one-info {
+            width: 100%;
+        }
+
+    }
+
+    .edit-wrap, .new-wrap {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1rem;
+
+        > * {
+            margin: 0 1rem;
+        }
+
+        > div {
+            width: 100%;
+            align-items: center;
+
+            &.times.time-picker {
+                display: flex;
+
+                > fieldset {
+                    margin: 0 1rem;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+
+.opening-hours-table-edit.panel.contacts.row {
+    display: flex;
+    justify-content: space-between;
+
+    div.components-toggle-control {
+        justify-self: left;
+        width: 10%;
+    }
+
+    div.contact.value {
+        justify-self: center;
+        max-width: 50%;
+        text-align: center;
+        min-height: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.contact.value.inactive {
+        opacity: 0.5;
+        font-style: italic;
+    }
+
+    button.components-button {
+        justify-self: right;
+    }
+}

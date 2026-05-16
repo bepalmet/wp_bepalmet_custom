@@ -1,0 +1,114 @@
+@use "~@wordpress/base-styles/colors" as *;
+@use "~@wordpress/base-styles/variables" as *;
+@use "~@wordpress/base-styles/mixins" as *;
+
+.opening-hours-settings-sidebar {
+	background: $white;
+	border-left: $border-width solid $gray-200;
+	bottom: 0;
+	color: $gray-900;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 0;
+	//width: $sidebar-width;
+
+	@include break-small() {
+		-webkit-overflow-scrolling: touch;
+		//height: auto;
+		overflow: auto;
+		top: $admin-bar-height-big + $header-height;
+
+	}
+
+	@include break-medium() {
+		top: $admin-bar-height + $header-height;
+	}
+
+	@include break-small() {
+		display: block;
+	}
+
+	> .components-panel {
+		border-left: 0;
+		border-right: 0;
+		margin-bottom: -1px;
+		margin-top: -1px;
+
+		> .components-panel__header {
+			background: $gray-200;
+		}
+	}
+
+	.block-editor-block-inspector__card {
+		margin: 0;
+	}
+}
+
+div.bepalmet-custom-sidebar.toggle-button.wrap {
+	position: fixed;
+	right: 0;
+	height: 100%;
+	margin: 0;
+	overflow: visible;
+	display: grid;
+	justify-items: end;
+	align-content: start;
+	background-color: lightgrey;
+
+	@include break-small() {
+		-webkit-overflow-scrolling: touch;
+		top: $admin-bar-height-big + $header-height;
+
+	}
+
+	@include break-medium() {
+		top: $admin-bar-height + $header-height;
+	}
+
+	@include break-small() {
+		display: grid;
+	}
+
+	button.components-button.bepalmet-custom-sidebar.toggle-button:hover {
+		background: none;
+	}
+
+	button.components-button.bepalmet-custom-sidebar.toggle-button {
+		position: absolute;
+		border: none;
+		box-shadow: none;
+		outline: 0;
+		color: black;
+		z-index: 1001;
+
+	}
+
+	@-webkit-keyframes slide {
+		100% {right: 0};
+	}
+
+	@keyframes slide {
+		100% {right: 0};
+	}
+
+	div.sidebar-panel.tab-panel-wrap {
+		position: relative;
+		right: -100%;
+		-webkit-animation: slide 0.5s forwards;
+		animation: slide 0.5s forwards;
+		height: 100%;
+		width: $sidebar-width;
+		z-index: 1000;
+	}
+
+	div.one-panel {
+		padding: 0.5rem 2rem;
+	}
+
+	div.header {
+		padding: 0.75rem 2rem;
+		font-size: larger;
+	}
+
+}
