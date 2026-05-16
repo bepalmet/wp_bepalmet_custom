@@ -15,7 +15,7 @@ import { useContext } from 'react';
  * External dependencies
  */
 
-import { useState } from 'react';
+import clsx from 'clsx';
 
 /**
  * 

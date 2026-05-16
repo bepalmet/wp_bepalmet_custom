@@ -19,6 +19,7 @@
 	"dependencies": {
 		"@wordpress/block-editor": "^15.19.0",
 		"@wordpress/core-data": "^7.36.0",
-		"@wordpress/interface": "^9.21.0"
+		"@wordpress/interface": "^9.21.0",
+		"clsx": "^2.1.1"
 	}
 }
