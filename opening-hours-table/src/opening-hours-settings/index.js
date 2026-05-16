@@ -2,7 +2,7 @@
  * Import of backend
  */
 
-// import { GlobalContext, GCProvider, RESTHandler as rh, GlobalVars as GV } from './backend';
+import { GCProvider } from './backend';
 
 /**
  * Registers a new block provided a unique name and an object defining its behavior.

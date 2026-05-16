@@ -27,7 +27,7 @@ import {
 import { __ } from '@wordpress/i18n';
 
 import GeneralSettings from './GeneralSettings';
-import TextWithFormat from '../../text-with-format';
+import { TextWithFormat } from '../../text-with-format';
 
 export default function EditOpeningHours( 
     { 
@@ -542,7 +542,6 @@ export default function EditOpeningHours(
                     LocationName: LocationName,
                     info: blockRef.current.attributes.content
                 });
-                console.log(newInfos)
                 setIsNewInfo( false );
 
                 //globalStates.screenData.setScreen( "/Edit/" + LocationName );

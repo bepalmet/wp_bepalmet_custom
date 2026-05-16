@@ -65,9 +65,8 @@ class Bepalmet_Custom_Blocks {
 		 * Add all blocks to register below.
 		 */
 
-		register_block_type( plugin_dir_path( dirname( __FILE__ ) ) . 'blocks/build/opening-hours-block' );
-		register_block_type( plugin_dir_path( dirname( __FILE__ ) ) . 'blocks/build/text-with-format' );
-		//register_block_type( plugin_dir_path( dirname( __FILE__ ) ) . 'blocks/build/draggable-sort-locations' );
+		register_block_type( plugin_dir_path( __FILE__ ) . 'build/opening-hours-block' );
+		register_block_type( plugin_dir_path( __FILE__ ) . 'build/text-with-format' );
 
 	}
 

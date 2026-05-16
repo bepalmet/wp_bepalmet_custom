@@ -29,6 +29,17 @@ return array(
 		'style' => 'file:./styles.scss',
 		'render' => 'file:./render.php'
 	),
+	'opening-hours-settings' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'bepalmet-custom/opening-hours-settings',
+		'description' => 'bepalmet_custom settings',
+		'title' => 'Opening hours',
+		'version' => '1.0.0',
+		'textdomain' => 'bepalmet_custom',
+		'editorScript' => 'file:./index.js',
+		'style' => 'file:./styles.scss'
+	),
 	'text-with-format' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,

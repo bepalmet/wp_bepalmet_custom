@@ -15,7 +15,7 @@
 
 <div class="opening-hours-settings-block-editor block-editor" id="opening-hours-settings-block-editor">
     <div class="js-error">
-        This page uses JavaScript! If you see this message, it is probably disabled.
+        This page uses JavaScript! If you see this message, it might disabled.
     </div>
 </div>
 

@@ -135,18 +135,6 @@ class Bepalmet_Custom_Admin {
 			''
 		);
 
-		/*
-		//deprecated
-		add_submenu_page( 
-			$parent_menu_slug, 
-			'DB Query', 
-			'DB Query',  
-			'edit_pages', 
-			plugin_dir_path(__FILE__) . 'partials/db-query.php',
-			''
-		);
-		*/
-
 	}
 
 	/**

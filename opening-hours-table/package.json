@@ -17,6 +17,7 @@
 		"@wordpress/scripts": "^31.1.0"
 	},
 	"dependencies": {
+		"@wordpress/block-editor": "^15.19.0",
 		"@wordpress/core-data": "^7.36.0",
 		"@wordpress/interface": "^9.21.0"
 	}
