@@ -43,28 +43,28 @@ class Bepalmet_Custom_Importer {
         } elseif ( current_user_can('edit_posts') ) {
             $local = true;
         } else {
-            wp_die(__('Sie haben keine Berechtigung für diese Aktion.', 'bepalmet'));
+            wp_die(__('Sie haben keine Berechtigung für diese Aktion.', "bepalmet_custom" ) );
         }
 
         // 2. Sicherheits-Nonce validieren
         if (!isset($_GET['_wpnonce']) || !wp_verify_nonce($_GET['_wpnonce'], 'bepalmet_import_nonce')) {
-            wp_die(__('Sicherheitsprüfung fehlgeschlagen.', 'bepalmet'));
+            wp_die(__('Sicherheitsprüfung fehlgeschlagen.', "bepalmet_custom" ) );
         }
 
         $file_type = strtolower(pathinfo($_FILES["import_file"]["name"],PATHINFO_EXTENSION));
 
         if ($_FILES["import_file"]["size"] > 1000000) {
-        echo __( "Your file is too large." );
+        echo __( "Your file is too large.", "bepalmet_custom" );
         $uploadOk = 0;
         }
 
         if($file_type != 'json') {
-        echo __( "Only JSON files allowed" );
+        echo __( "Only JSON files allowed", "bepalmet_custom" );
         $uploadOk = 0;
         }
 
         if ( isset( $uploadOk ) && $uploadOk == 0) {
-        echo __( "An Error occured and the file was not uploaded" );
+        echo __( "An Error occured and the file was not uploaded", "bepalmet_custom" );
         }
 
         if (

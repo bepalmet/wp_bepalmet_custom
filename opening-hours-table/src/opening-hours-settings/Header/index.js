@@ -9,14 +9,14 @@ function Header( { ...props } ) {
 		<div
 			className="opening-hours-settings-header"
 			role="region"
-			aria-label={ __( 'Opening Hours Settings top bar.', 'opening-hours-settings' ) }
+			aria-label={ __( 'Opening Hours Settings top bar.', "bepalmet_custom" ) }
 			tabIndex="-1"
 		>
 			<div className={ "loader-wrap" + ( props.isLoading ? " is-loading" : "" ) }>
 				<div className={ "loader" + ( props.isLoading ? " is-loading" : "" ) }/>
 			</div>
 			<h1 className="opening-hours-settings-header__title">
-				{ __( 'Opening Hours Settings', 'opening-hours-settings' ) }
+				{ __( 'Opening Hours Settings', "bepalmet_custom" ) }
 			</h1>
 		</div>
 	);

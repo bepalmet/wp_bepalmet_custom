@@ -33,10 +33,10 @@ if ( is_multisite() ) {
 }
 
 $contact_labels = array(
-    'phone' => __( "Phone" ),
-    'fax' => __( "Fax" ),
-    'mail' => __( "E-Mail" ),
-    'address' => __( "Address" )
+    'phone' => __( "Phone", "bepalmet_custom" ),
+    'fax' => __( "Fax", "bepalmet_custom" ),
+    'mail' => __( "E-Mail", "bepalmet_custom" ),
+    'address' => __( "Address", "bepalmet_custom" )
 );
 
 if (!function_exists('value_link')){

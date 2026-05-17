@@ -117,7 +117,7 @@ class Bepalmet_Custom_Admin {
 		 */
 
 		add_menu_page( 
-			__( 'Settings for bepalmet-custom', 'textdomain' ),
+			__( 'Settings for bepalmet-custom', "bepalmet_custom" ),
 			"bepalmet custom",
 			'edit_posts',
 			$parent_menu_slug,

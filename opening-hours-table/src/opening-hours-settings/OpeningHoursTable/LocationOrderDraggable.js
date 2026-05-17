@@ -133,7 +133,7 @@ const LocationOrderDraggable = ( {
                 className={ clsx( props.className, "save-order" ) }
                 onClick={ saveClick }
             >
-                { __( "Save order" ) }
+                { __( "Save order", "bepalmet_custom" ) }
             </Button>
         </div>
     )

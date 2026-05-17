@@ -75,12 +75,12 @@ class Bepalmet_Custom_Exporter {
         } elseif ( current_user_can('edit_posts') ) {
             $local = true;
         } else {
-            wp_die(__('Sie haben keine Berechtigung für diese Aktion.', 'bepalmet'));
+            wp_die(__('Sie haben keine Berechtigung für diese Aktion.', "bepalmet_custom" ) );
         }
 
         // 2. Sicherheits-Nonce validieren
         if (!isset($_GET['_wpnonce']) || !wp_verify_nonce($_GET['_wpnonce'], 'bepalmet_export_nonce')) {
-            wp_die(__('Sicherheitsprüfung fehlgeschlagen.', 'bepalmet'));
+            wp_die(__('Sicherheitsprüfung fehlgeschlagen.', "bepalmet_custom" ) );
         }
 
         // 3. Create content
