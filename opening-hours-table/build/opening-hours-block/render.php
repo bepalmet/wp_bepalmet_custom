@@ -18,17 +18,25 @@ $class_name = "bepalmet-custom opening-hours-table render public";
 
 global $wpdb;
 
-$table_name_settings = $wpdb->prefix . 'bepalmet_opening_hours_settings';
-$table_name_times = $wpdb->prefix . 'bepalmet_opening_hours_times';
-$table_name_infos = $wpdb->prefix . 'bepalmet_opening_hours_infos';
-$table_name_locations = $wpdb->prefix . 'bepalmet_opening_hours_locations';
-$table_name_contacts = $wpdb->prefix . 'bepalmet_opening_hours_contacts';
+if ( is_multisite() ) {
+    $table_name_settings = $wpdb->prefix . 'bepalmet_custom_local_view_settings';
+    $table_name_times = $wpdb->prefix . 'bepalmet_custom_local_view_times';
+    $table_name_infos = $wpdb->prefix . 'bepalmet_custom_local_view_infos';
+    $table_name_locations = $wpdb->prefix . 'bepalmet_custom_local_view_locations';
+    $table_name_contacts = $wpdb->prefix . 'bepalmet_opening_hours_view_contacts';
+} else {
+    $table_name_settings = $wpdb->prefix . 'bepalmet_opening_hours_settings';
+    $table_name_times = $wpdb->prefix . 'bepalmet_opening_hours_view_times';
+    $table_name_infos = $wpdb->prefix . 'bepalmet_opening_hours_view_infos';
+    $table_name_locations = $wpdb->prefix . 'bepalmet_opening_hours_locations';
+    $table_name_contacts = $wpdb->prefix . 'bepalmet_opening_hours_view_contacts';
+}
 
 $contact_labels = array(
-    'phone' => __("Phone"),
-    'fax' => __("Fax"),
-    'mail' => __("E-Mail"),
-    'address' => __("Address")
+    'phone' => __( "Phone" ),
+    'fax' => __( "Fax" ),
+    'mail' => __( "E-Mail" ),
+    'address' => __( "Address" )
 );
 
 if (!function_exists('value_link')){
@@ -107,8 +115,10 @@ $infos_all = $wpdb->get_results( "SELECT info FROM $table_name_infos WHERE Locat
 
 $setsize = !$infos_all ? 2 : 3;
 
+$wrapper_attributes = get_block_wrapper_attributes();
 
 ?>
+<div class="<?= $wrapper_attributes = get_block_wrapper_attributes(); ?>">
     <div class="<?= $class_name ?> opening-hours-table-wrap">
         <div 
             class="<?= $class_name ?> opening-hours-table-header"
@@ -271,3 +281,4 @@ $setsize = !$infos_all ? 2 : 3;
             </tr>
         </table>
     </div>
+</div>

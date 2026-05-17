@@ -1,21 +1,17 @@
 import { useBlockProps } from '@wordpress/block-editor';
-import { OpeningHoursTable } from '../opening-hours-settings';
-
-import './editor.scss'
+import ServerSideRender from '@wordpress/server-side-render';
 
 function Edit() {
 
 	const blockProps = useBlockProps();
 
-	const tableObject = new OpeningHoursTable( {} );
-	if ( typeof tableObject.finalTable === 'string' ) {
-
-	}
-
 	return (
-		<div { ...blockProps }>
-			{ tableObject.finalTable }
-		</div>
+		<div
+			{ ...blockProps }
+			className="wp-block-bepalmet-custom-opening-hours-block-wrapper"
+		>
+				<ServerSideRender block="bepalmet-custom/opening-hours-block" />
+			</div>
 	);
 
 }
