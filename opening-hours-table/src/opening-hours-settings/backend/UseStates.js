@@ -77,13 +77,14 @@ const GCProvider = ( { children: children, setIsLoading: setIsLoading } ) => {
         }
         showAllRef.current = storage;
     }
+                    
 
     // Load initial data
     useEffect( () => {
         setIsLoading( true );
         const loadInitialData = async () => {
             try {
-                const [capabilityData, timesData, infosData, locsData, settingsData, contactsData] = await Promise.all([
+                const [ capabilityData, timesData, infosData, locsData, settingsData, contactsData] = await Promise.all([
 
                     RESTHandler.getCapability( 'edit_pages' ),
                     RESTHandler.getTimes( ! showAllRef.current),
@@ -94,13 +95,13 @@ const GCProvider = ( { children: children, setIsLoading: setIsLoading } ) => {
                 ]);
                 
                 unstable_batchedUpdates( () => {
-                    setHasEditorCapability(capabilityData);
                     setTimes(timesData);
                     setInfos(infosData);
                     setLocs(locsData);
                     setSettings(settingsData);
                     setContacts(contactsData);
                     setIsLoading(false);
+                    setHasEditorCapability(capabilityData);
                 });
             } catch (error) {
                 console.error('Failed to load initial data:', error);

@@ -16,18 +16,19 @@ final class Rest_Routes {
     public static function register_rest_route_to_db( $that, $table_suffix, $local = true ) {
         global $wpdb;
 
-        if ( $local ) {
+        $multisite = is_multisite();
+        if ( $local && $multisite ) {
             $table_name = $wpdb->prefix . 'bepalmet_custom_local_view_' . $table_suffix;
             $permission = 'edit_posts';
             $rest_route_name = "opening-hours-$table_suffix/";
         } else {
-            $permission = 'edit_pages';
+            $permission = $multisite ? 'edit_pages' : 'edit_posts';
             if ( in_array( $table_suffix, [ "contacts", "times", "infos" ] ) ) {
                 $table_name = $wpdb->base_prefix . 'bepalmet_opening_hours_view_' . $table_suffix;
             } else {
                 $table_name = $wpdb->base_prefix . 'bepalmet_opening_hours_' . $table_suffix;
             }
-            $rest_route_name = "opening-hours-global-$table_suffix/";
+            $rest_route_name = "opening-hours-" . ( $multisite ? "global-" : "" ) . $table_suffix;
         }
 
         $wrapper = function( $request ) use( $that, $table_name ) {

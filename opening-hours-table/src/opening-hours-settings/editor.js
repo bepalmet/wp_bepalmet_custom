@@ -45,7 +45,7 @@ function Editor( { settings, ...props } ) {
     props.className = clsx( props.className, "bepalmet-opening-hours-settings-editor" );
 
     const globalStates = useContext( GlobalContext );
-    const local = ! globalStates.showAllLocs.state;
+    const local = wpGlobalVars.sites ? !globalStates.showAllLocs.state : false;
 
     const EditorSettings = () => {
 
