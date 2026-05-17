@@ -49,9 +49,7 @@ class Bepalmet_Custom_Admin_Rest {
         if ( ! current_user_can( 'edit_posts' ) ) {
             return new WP_Error( 
                 'rest_forbidden', 
-                esc_html__( 
-                    "You dont have access to this"
-                ),
+                esc_html__( "You dont have access to this", 'bepalmet_custom'),
                 array( 'status' => 401 ) 
             );
         } else {

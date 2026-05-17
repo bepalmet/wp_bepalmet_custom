@@ -38,9 +38,7 @@ final class Rest_Routes {
             if ( ! current_user_can( $permission ) ) {
                 return new WP_Error( 
                     'rest_forbidden', 
-                    esc_html__( 
-                        "You dont have access to this"
-                    ),
+                    esc_html__( "You dont have access to this", 'bepalmet_custom'),
                     array( 'status' => 401 ) 
                 );
             } else {

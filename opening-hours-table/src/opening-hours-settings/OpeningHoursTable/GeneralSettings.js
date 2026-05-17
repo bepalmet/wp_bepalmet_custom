@@ -136,7 +136,7 @@ export default function GeneralSettings(
             globalStates.refreshOne( "settings", newSettings)
         }
 
-        const allLabel = state ? __( "Deselect all" ) : __( "Select all" );
+        const allLabel = state ? __( "Deselect all", 'bepalmet_custom') : __( "Select all", 'bepalmet_custom');
 
         return (
             <Button
@@ -182,14 +182,14 @@ export default function GeneralSettings(
         >
             <Panel>
                 <PanelBody
-                    title={ __( "Shown locations in order" ) }
+                    title={ __( "Shown locations in order", 'bepalmet_custom') }
                     initialOpen={ locsTrue.length > 0 }
                 >
                     <div 
                         className={ clsx( props.className, "drag-hint" ) }
-                        title={ __( "Drag by holding click on an element and moving the mouse" ) }
+                        title={ __( "Drag by holding click on an element and moving the mouse", 'bepalmet_custom') }
                     >
-                        { __( "You can change the order of the shown locations by draging them" ) }
+                        { __( "You can change the order of the shown locations by draging them", 'bepalmet_custom') }
                     </div>
                     <LocationOrderDraggable
                         settingsData={ settings }
@@ -205,7 +205,7 @@ export default function GeneralSettings(
             </Panel>
             <Panel>
                 <PanelBody
-                    title={ __( "Hidden locations" ) }
+                    title={ __( "Hidden locations", 'bepalmet_custom') }
                     initialOpen={ locsFalse.length > 0 }
                     className={ clsx( props.className, "panel-body" ) }
                 >

@@ -145,10 +145,10 @@ class OpeningHoursTable {
 
     }
 
-    #closedMessage = __( "Closed" );
-    #openingsText = __( "Openings" );
-    #contactsLabel = __( "Contact" );
-    #contactsText = __( "Contact" );
+    #closedMessage = __( "Closed", 'bepalmet_custom');
+    #openingsText = __( "Openings", 'bepalmet_custom');
+    #contactsLabel = __( "Contact", 'bepalmet_custom');
+    #contactsText = __( "Contact", 'bepalmet_custom');
 
     renderTable( { ...props } ) {
 
@@ -281,10 +281,10 @@ class OpeningHoursTable {
             }
 
             let contactLabels = {
-                phone: __( "Phone Number:" ),
-                fax: __( "Fax Number:" ),
-                mail: __( "E-Mail Address:" ),
-                address: __( "Address:" )
+                phone: __( "Phone Number:", 'bepalmet_custom'),
+                fax: __( "Fax Number:", 'bepalmet_custom'),
+                mail: __( "E-Mail Address:", 'bepalmet_custom'),
+                address: __( "Address:", 'bepalmet_custom')
             }
             let renderContact = [];
             for ( let [ contact, { active: active, value: value } ] of Object.entries( this.contacts[locName] ) ) {
@@ -395,7 +395,7 @@ class OpeningHoursTable {
             <div 
                 className={ clsx( props.className, "opening-hours-table-header" ) }
             >
-                { __( "Opening hours and contact" ) }
+                { __( "Opening hours and contact", 'bepalmet_custom') }
             </div>
         );
 
