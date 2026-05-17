@@ -36,13 +36,13 @@ class GlobalVars {
             short = parseInt(short);
         }
         return {
-            1: short ? __( "Mo", 'bepalmet_custom') : __( "Monday", 'bepalmet_custom'),
-            2: short ? __( "Tu", 'bepalmet_custom') : __( "Tuesday", 'bepalmet_custom'),
-            3: short ? __( "We", 'bepalmet_custom') : __( "Wednesday", 'bepalmet_custom'),
-            4: short ? __( "Th", 'bepalmet_custom') : __( "Thursday", 'bepalmet_custom'),
-            5: short ? __( "Fr", 'bepalmet_custom') : __( "Friday", 'bepalmet_custom'),
-            6: short ? __( "Sa", 'bepalmet_custom') : __( "Saturday", 'bepalmet_custom'),
-            7: short ? __( "So", 'bepalmet_custom') : __( "Sunday", 'bepalmet_custom')
+            1: short ? __( "Mo" ) : __( "Monday" ),
+            2: short ? __( "Tu" ) : __( "Tuesday" ),
+            3: short ? __( "We" ) : __( "Wednesday" ),
+            4: short ? __( "Th" ) : __( "Thursday" ),
+            5: short ? __( "Fr" ) : __( "Friday" ),
+            6: short ? __( "Sa" ) : __( "Saturday" ),
+            7: short ? __( "So" ) : __( "Sunday" )
         }[weekday] };
 
     /**

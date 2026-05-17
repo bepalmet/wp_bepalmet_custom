@@ -33,16 +33,20 @@ if ( is_multisite() ) {
 }
 
 $contact_labels = array(
-    'phone' => __( "Phone", 'bepalmet_custom'),
-    'fax' => __( "Fax", 'bepalmet_custom'),
-    'mail' => __( "E-Mail", 'bepalmet_custom'),
-    'address' => __( "Address", 'bepalmet_custom')
+    'phone' => __( "Phone" ),
+    'fax' => __( "Fax" ),
+    'mail' => __( "E-Mail" ),
+    'address' => __( "Address" )
 );
 
 if (!function_exists('value_link')){
     function value_link( string $label, ?string $value ) {
         $link_base = array(
-            'phone' => "tel:", 'bepalmet_custom');
+            'phone' => "tel:",
+            'fax' => "fax:",
+            'mail' => "mailto:",
+            //'address' => 'geo:0,0?='
+        );
         $link = urlencode($value);
         if ( $label != 'address' ) {
             return "<a href=\"$link_base[$label]$link\">$value</a>";
