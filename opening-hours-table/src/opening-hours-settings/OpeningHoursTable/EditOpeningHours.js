@@ -220,11 +220,13 @@ export default function EditOpeningHours(
                         >
                             { LocationName }
                         </h1>
-                        <h4 
-                            className={ clsx( props.className, "site-heading" ) }
-                        >
-                            { wpGlobalVars.sites[currentLocation.site_id] ?? "Global" }
-                        </h4>
+                        { wpGlobalVars.sites && 
+                            <h4 
+                                className={ clsx( props.className, "site-heading" ) }
+                            >
+                                { __( "Site: " ) + wpGlobalVars.sites[currentLocation.site_id] ?? __( "Global" ) }
+                            </h4> 
+                        }
                     </div>
                     <Button 
                         className={ clsx( props.className, "button-edit" ) }
