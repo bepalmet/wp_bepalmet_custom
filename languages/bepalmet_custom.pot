@@ -4,12 +4,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bepalmet custom plugin 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp_bepalmet_custom\n"
-"Last-Translator: Benedikt Palmetshofer <plugins@bepalmet.de>\n"
-"Language-Team: Plugin creator <plugins@bepalmet.de\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-05-17T20:22:32+00:00\n"
+"POT-Creation-Date: 2026-05-17T18:48:21+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: bepalmet_custom\n"
@@ -39,191 +39,6 @@ msgstr ""
 msgid "http://example.com/"
 msgstr ""
 
-#: admin/class-bepalmet_custom-admin.php:120
-msgid "Settings for bepalmet-custom"
-msgstr ""
-
-#: admin/import-export/class-bepalmet_custom-exporter.php:78
-#: admin/import-export/class-bepalmet_custom-importer.php:46
-msgid "Sie haben keine Berechtigung für diese Aktion."
-msgstr ""
-
-#: admin/import-export/class-bepalmet_custom-exporter.php:83
-#: admin/import-export/class-bepalmet_custom-importer.php:51
-msgid "Sicherheitsprüfung fehlgeschlagen."
-msgstr ""
-
-#: admin/import-export/class-bepalmet_custom-importer.php:57
-msgid "Your file is too large."
-msgstr ""
-
-#: admin/import-export/class-bepalmet_custom-importer.php:62
-msgid "Only JSON files allowed"
-msgstr ""
-
-#: admin/import-export/class-bepalmet_custom-importer.php:67
-msgid "An Error occured and the file was not uploaded"
-msgstr ""
-
-#: admin/partials/class-bepalmet_custom-admin-rest.php:52
-#: opening-hours-table/build/opening-hours-settings/backend/class-rest-routes.php:41
-#: opening-hours-table/src/opening-hours-settings/backend/class-rest-routes.php:41
-msgid "You dont have access to this"
-msgstr ""
-
-#: opening-hours-table/build/opening-hours-block/render.php:36
-#: opening-hours-table/src/opening-hours-block/render.php:36
-msgid "Phone"
-msgstr ""
-
-#: opening-hours-table/build/opening-hours-block/render.php:37
-#: opening-hours-table/src/opening-hours-block/render.php:37
-msgid "Fax"
-msgstr ""
-
-#: opening-hours-table/build/opening-hours-block/render.php:38
-#: opening-hours-table/src/opening-hours-block/render.php:38
-msgid "E-Mail"
-msgstr ""
-
-#: opening-hours-table/build/opening-hours-block/render.php:39
-#: opening-hours-table/src/opening-hours-block/render.php:39
-msgid "Address"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:39
-msgid "Mo"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:39
-msgid "Monday"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:40
-msgid "Tu"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:40
-msgid "Tuesday"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:41
-msgid "We"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:41
-msgid "Wednesday"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:42
-msgid "Th"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:42
-msgid "Thursday"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:43
-msgid "Fr"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:43
-msgid "Friday"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:44
-msgid "Sa"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:44
-msgid "Saturday"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:45
-msgid "So"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:45
-msgid "Sunday"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/Header/index.js:18
-msgid "Opening Hours Settings"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/GeneralSettings.js:139
-msgid "Deselect all"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/GeneralSettings.js:139
-msgid "Select all"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/GeneralSettings.js:185
-msgid "Shown locations in order"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/GeneralSettings.js:190
-msgid "Drag by holding click on an element and moving the mouse"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/GeneralSettings.js:192
-msgid "You can change the order of the shown locations by draging them"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/GeneralSettings.js:208
-msgid "Hidden locations"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/index.js:213
-msgid "Opening Hours Settings Places"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/LocationOrderDraggable.js:136
-msgid "Save order"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:148
-msgid "Closed"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:149
-msgid "Openings"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:150
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:151
-msgid "Contact"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:284
-msgid "Phone Number:"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:285
-msgid "Fax Number:"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:286
-msgid "E-Mail Address:"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:287
-msgid "Address:"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:398
-msgid "Opening hours and contact"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/Sidebar/SidebarPanel.js:85
-msgid "Additional settings"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-settings/Sidebar/SidebarPanel.js:102
-msgid "Multisite Settings"
-msgstr ""
-
 #: opening-hours-table/build/opening-hours-settings/block.json
 #: opening-hours-table/src/opening-hours-settings/block.json
 msgctxt "block description"
@@ -231,13 +46,7 @@ msgid "bepalmet_custom settings"
 msgstr ""
 
 #: opening-hours-table/build/opening-hours-settings/block.json
-#: opening-hours-table/src/opening-hours-block/block.json
 #: opening-hours-table/src/opening-hours-settings/block.json
 msgctxt "block title"
 msgid "Opening hours"
-msgstr ""
-
-#: opening-hours-table/src/opening-hours-block/block.json
-msgctxt "block description"
-msgid "bepalmet-custom block to render the opening hours table"
 msgstr ""

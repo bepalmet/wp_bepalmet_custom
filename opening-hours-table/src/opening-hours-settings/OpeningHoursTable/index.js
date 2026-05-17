@@ -210,6 +210,7 @@ function EditSettingsScreenHandler( { settings: EditorSettings, ...props } ) {
         <div
             className={ "opening-hours-settings-places" + ( props.isLoading ? " is-loading" : "" ) }
             role="region"
+            aria-label={ __( 'Opening Hours Settings Places', 'bepalmet_custom') }
         >
             <Navigator initialPath={ '/Edit' }>
                 <NavigationWatcher onChange={ ( loc ) => globalStates.screenData.setScreen( loc.path ) } />

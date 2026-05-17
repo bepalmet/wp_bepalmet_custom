@@ -9,6 +9,7 @@ function Header( { ...props } ) {
 		<div
 			className="opening-hours-settings-header"
 			role="region"
+			aria-label={ __( 'Opening Hours Settings top bar.', 'bepalmet_custom') }
 			tabIndex="-1"
 		>
 			<div className={ "loader-wrap" + ( props.isLoading ? " is-loading" : "" ) }>
