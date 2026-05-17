@@ -35,9 +35,12 @@ import apiFetch from '@wordpress/api-fetch';
 
 export default class RESTHandler {
 
-    static #pathBase = ( type = '', local = true ) => local 
+    static #pathBase = ( type = '', local = true ) => {
+        if ( ! wpGlobalVars.sites ) local = true;
+        return local 
         ? '/bepalmet_custom/api/' + type + '-opening-hours-'
         : '/bepalmet_custom/api/' + type + '-opening-hours-global-';
+    }
 
     /**
 	 * Function to get a capability of current user
