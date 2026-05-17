@@ -224,7 +224,7 @@ export default function EditOpeningHours(
                             <h4 
                                 className={ clsx( props.className, "site-heading" ) }
                             >
-                                { __( "Site: " ) + wpGlobalVars.sites[currentLocation.site_id] ?? __( "Global", "bepalmet_custom" ) }
+                                { __( "Site: ", "bepalmet_custom" ) + wpGlobalVars.sites[currentLocation.site_id] ?? __( "Global", "bepalmet_custom" ) }
                             </h4> 
                         }
                     </div>
@@ -425,7 +425,7 @@ export default function EditOpeningHours(
         const Weekday = ( { ...props } ) => (
             <Panel>
                 <PanelBody 
-                    title={ __( GV.weekdays(props.day) ) } 
+                    title={ __( GV.weekdays(props.day), "bepalmet_custom" ) } 
                     initialOpen={ typeof props.rows !== 'undefined' || isNewStates[props.day].newDay[0] }
                 >
                     <Button 

@@ -136,7 +136,7 @@ export default function GeneralSettings(
             globalStates.refreshOne( "settings", newSettings)
         }
 
-        const allLabel = state ? __( "Deselect all" ) : __( "Select all", "bepalmet_custom" );
+        const allLabel = state ? __( "Deselect all", "bepalmet_custom" ) : __( "Select all", "bepalmet_custom" );
 
         return (
             <Button
