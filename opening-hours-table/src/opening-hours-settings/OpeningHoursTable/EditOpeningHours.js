@@ -105,7 +105,6 @@ export default function EditOpeningHours(
                 nav.goTo( "/Edit" );
                 globalStates.refreshOne( "locs", newLocs );
             }
-            // globalStates.screenData.setScreen( "/Edit/" + currentLocation.LocationName );
             if ( typeof props.time !== 'undefined' ) {
                 const newTimes = deleteTimeById( props.time.id );
                 globalStates.refreshOne( "times", newTimes );
@@ -544,7 +543,6 @@ export default function EditOpeningHours(
                 });
                 setIsNewInfo( false );
 
-                //globalStates.screenData.setScreen( "/Edit/" + LocationName );
                 globalStates.refreshOne( "infos", newInfos );
             }
 
@@ -935,7 +933,9 @@ export default function EditOpeningHours(
 
         return (
         <>
-            <Navigator.BackButton>{ __("Back") }</Navigator.BackButton>
+            <Navigator.BackButton>
+                { __( "Back" ) }
+            </Navigator.BackButton>
             <TextControl
                 __nextHasNoMarginBottom
                 __next40pxDefaultSize
@@ -943,11 +943,13 @@ export default function EditOpeningHours(
                 value={ newLocText }
                 onChange={ ( newText ) => setNewLocText( newText ) }
             />
-            { globalStates.hasEditorCapability && <SiteSelectDropdown/> }
+            { wpGlobalVars.sites && globalStates.hasEditorCapability && <SiteSelectDropdown/> }
             <Button
                 onClick={ handleButton }
                 type='submit'
-            >{ __("Save") }</Button>
+            >
+                { __( "Save" ) }
+            </Button>
         </>
         );
     }
