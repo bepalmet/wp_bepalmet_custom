@@ -99,7 +99,7 @@ function SidebarPanel( {
                 <div
                     className={ clsx( props.className, "header" ) }
                 >
-                    { __( "Global Settings" ) }
+                    { __( "Multisite Settings" ) }
                 </div>
                 <div
                     className={ clsx( props.className, "one-panel" ) }
@@ -117,9 +117,9 @@ function SidebarPanel( {
             className: clsx( props.className, "tab-panel-main" ),
             children: <MainTabPanel/>
         },
-        {
+        wpGlobalVars.sites && {
             name: 'globalSettings',
-            title: 'Global',
+            title: 'Multisite',
             className: clsx( props.className, "tab-panel-main" ),
             children: <GlobalTabPanel/>,
             disabled: ! globalStates.hasEditorCapability
