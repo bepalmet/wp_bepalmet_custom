@@ -505,7 +505,7 @@ class Bepalmet_Custom_Activator {
 
 		require_once ABSPATH . 'wp-admin/includes/plugin.php';
 			
-		if ( is_plugin_active_for_network( 'wp_bepalmet_custom/wp_bepalmet_custom.php' ) ) {
+		if ( is_plugin_active_for_network( 'wp-bepalmet-custom/wp-bepalmet-custom.php' ) ) {
 			self::create_local_tables( [ $new_site->id ] );
 		}
 

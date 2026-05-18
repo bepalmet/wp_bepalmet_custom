@@ -98,7 +98,7 @@ class Bepalmet_Custom_Blocks {
 		foreach ( $this->blocks as $block ) {
 			wp_set_script_translations(
 				plugin_dir_path( __FILE__ ) . 'build/' . $block . '/index.js',
-				'wp_bepalmet_custom',
+				'wp-bepalmet-custom',
 				plugin_dir_path( dirname( __FILE__ ) ) . 'languages'
 			);
 		}

@@ -35,7 +35,7 @@ class Bepalmet_Custom_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'wp_bepalmet_custom',
+			'wp-bepalmet-custom',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);

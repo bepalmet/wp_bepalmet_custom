@@ -33,10 +33,10 @@ if ( is_multisite() ) {
 }
 
 $contact_labels = array(
-    'phone' => __( "Phone", "wp_bepalmet_custom" ),
-    'fax' => __( "Fax", "wp_bepalmet_custom" ),
-    'mail' => __( "E-Mail", "wp_bepalmet_custom" ),
-    'address' => __( "Address", "wp_bepalmet_custom" )
+    'phone' => __( "Phone", "wp-bepalmet-custom" ),
+    'fax' => __( "Fax", "wp-bepalmet-custom" ),
+    'mail' => __( "E-Mail", "wp-bepalmet-custom" ),
+    'address' => __( "Address", "wp-bepalmet-custom" )
 );
 
 if (!function_exists('value_link')){

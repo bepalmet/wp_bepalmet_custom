@@ -82,7 +82,7 @@ function SidebarPanel( {
                 <div
                     className={ clsx( props.className, "header" ) }
                 >
-                    { __( "Additional settings", "wp_bepalmet_custom" ) }
+                    { __( "Additional settings", "wp-bepalmet-custom" ) }
                 </div>
                 <div
                     className={ clsx( props.className, "one-panel" ) }
@@ -99,7 +99,7 @@ function SidebarPanel( {
                 <div
                     className={ clsx( props.className, "header" ) }
                 >
-                    { __( "Multisite Settings", "wp_bepalmet_custom" ) }
+                    { __( "Multisite Settings", "wp-bepalmet-custom" ) }
                 </div>
                 <div
                     className={ clsx( props.className, "one-panel" ) }

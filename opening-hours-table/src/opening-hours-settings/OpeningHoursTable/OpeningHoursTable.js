@@ -145,10 +145,10 @@ class OpeningHoursTable {
 
     }
 
-    #closedMessage = __( "Closed", "wp_bepalmet_custom" );
-    #openingsText = __( "Openings", "wp_bepalmet_custom" );
-    #contactsLabel = __( "Contact", "wp_bepalmet_custom" );
-    #contactsText = __( "Contact", "wp_bepalmet_custom" );
+    #closedMessage = __( "Closed", "wp-bepalmet-custom" );
+    #openingsText = __( "Openings", "wp-bepalmet-custom" );
+    #contactsLabel = __( "Contact", "wp-bepalmet-custom" );
+    #contactsText = __( "Contact", "wp-bepalmet-custom" );
 
     renderTable( { ...props } ) {
 
@@ -281,10 +281,10 @@ class OpeningHoursTable {
             }
 
             let contactLabels = {
-                phone: __( "Phone Number:", "wp_bepalmet_custom" ),
-                fax: __( "Fax Number:", "wp_bepalmet_custom" ),
-                mail: __( "E-Mail Address:", "wp_bepalmet_custom" ),
-                address: __( "Address:", "wp_bepalmet_custom" )
+                phone: __( "Phone Number:", "wp-bepalmet-custom" ),
+                fax: __( "Fax Number:", "wp-bepalmet-custom" ),
+                mail: __( "E-Mail Address:", "wp-bepalmet-custom" ),
+                address: __( "Address:", "wp-bepalmet-custom" )
             }
             let renderContact = [];
             for ( let [ contact, { active: active, value: value } ] of Object.entries( this.contacts[locName] ) ) {
@@ -395,7 +395,7 @@ class OpeningHoursTable {
             <div 
                 className={ clsx( props.className, "opening-hours-table-header" ) }
             >
-                { __( "Opening hours and contact", "wp_bepalmet_custom" ) }
+                { __( "Opening hours and contact", "wp-bepalmet-custom" ) }
             </div>
         );
 

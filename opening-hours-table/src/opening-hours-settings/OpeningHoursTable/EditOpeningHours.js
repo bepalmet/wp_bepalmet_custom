@@ -124,7 +124,7 @@ export default function EditOpeningHours(
                     onClick={ openModal } 
                     className={ clsx( props.className, "delete" ) }
                 >
-                    { __( "Delete", "wp_bepalmet_custom" ) }
+                    { __( "Delete", "wp-bepalmet-custom" ) }
                 </Button>
                 { isOpen && (
                     <Modal 
@@ -138,14 +138,14 @@ export default function EditOpeningHours(
                             onClick={ () => handleDelete( props ) }
                             className={ clsx( props.className, "modal delete" ) }
                         >
-                            { __( "Delete", "wp_bepalmet_custom" ) }
+                            { __( "Delete", "wp-bepalmet-custom" ) }
                         </Button>
                         <Button 
                             variant="secondary" 
                             onClick={ closeModal } 
                             className={ clsx( props.className, "modal abort" ) }
                         >
-                            { __( "Abort", "wp_bepalmet_custom" ) }
+                            { __( "Abort", "wp-bepalmet-custom" ) }
                         </Button>
                     </Modal>
                 ) }
@@ -158,7 +158,7 @@ export default function EditOpeningHours(
         if ( props.isAll ) {
             return (
                 <div className={ clsx( props.className, "wrap" ) }>
-                    <h1 className={ clsx( props.className, "heading" ) }>{ __( "General settings", "wp_bepalmet_custom" ) }</h1>
+                    <h1 className={ clsx( props.className, "heading" ) }>{ __( "General settings", "wp-bepalmet-custom" ) }</h1>
                 </div>
             )
         }
@@ -192,11 +192,11 @@ export default function EditOpeningHours(
                         __nextHasNoMarginBottom
                         __next40pxDefaultSize
                         value={ locName }
-                        label={ __( "Name of the location", "wp_bepalmet_custom" ) }
+                        label={ __( "Name of the location", "wp-bepalmet-custom" ) }
                         onChange={ ( newLocName ) => handleLocChange( newLocName ) }
                     />
-                    <Button onClick={ saveClick }>{ __( "Save", "wp_bepalmet_custom" ) }</Button>
-                    <Button onClick={ abortClick }>{ __( "Abort", "wp_bepalmet_custom" ) }</Button>
+                    <Button onClick={ saveClick }>{ __( "Save", "wp-bepalmet-custom" ) }</Button>
+                    <Button onClick={ abortClick }>{ __( "Abort", "wp-bepalmet-custom" ) }</Button>
                 </>
             );
 
@@ -224,7 +224,7 @@ export default function EditOpeningHours(
                             <h4 
                                 className={ clsx( props.className, "site-heading" ) }
                             >
-                                { __( "Site: ", "wp_bepalmet_custom" ) + wpGlobalVars.sites[currentLocation.site_id] ?? __( "Global", "wp_bepalmet_custom" ) }
+                                { __( "Site: ", "wp-bepalmet-custom" ) + wpGlobalVars.sites[currentLocation.site_id] ?? __( "Global", "wp-bepalmet-custom" ) }
                             </h4> 
                         }
                     </div>
@@ -232,7 +232,7 @@ export default function EditOpeningHours(
                         className={ clsx( props.className, "button-edit" ) }
                         onClick={ () => handleClickLocation(props) }
                     >
-                        { __( "Edit name", "wp_bepalmet_custom" ) }
+                        { __( "Edit name", "wp-bepalmet-custom" ) }
                     </Button>
                     <DeleteModal 
                         { ...props } 
@@ -303,13 +303,13 @@ export default function EditOpeningHours(
                     >
                         <TimePicker.TimeInput
                             value={ openStates[props.time.id][0] }
-                            label={ __( "Open:", "wp_bepalmet_custom" ) }
+                            label={ __( "Open:", "wp-bepalmet-custom" ) }
                             onChange={ ( newOpen ) => handleOpenChange( newOpen ) }
                             className={ clsx( props.className, "times edit time-picker open" ) }
                         />
                         <TimePicker.TimeInput
                             value={ closeStates[props.time.id][0] }
-                            label={ __( "Close:", "wp_bepalmet_custom" ) }
+                            label={ __( "Close:", "wp-bepalmet-custom" ) }
                             onChange={ ( newClose ) => handleCloseChange( newClose ) }
                             className={ clsx( props.className, "times edit time-picker closed" ) }
                         />
@@ -318,13 +318,13 @@ export default function EditOpeningHours(
                         onClick={ saveClick }
                         className={ clsx( props.className, "times edit save" ) }
                     >
-                        { __( "Save", "wp_bepalmet_custom" ) }
+                        { __( "Save", "wp-bepalmet-custom" ) }
                     </Button>
                     <Button 
                         onClick={ abortClick }
                         className={ clsx( props.className, "times edit abort" ) }
                     >
-                        { __( "Abort", "wp_bepalmet_custom" ) }
+                        { __( "Abort", "wp-bepalmet-custom" ) }
                     </Button>
                 </div>
             );
@@ -376,13 +376,13 @@ export default function EditOpeningHours(
                             onClick={ () => saveNew( newOpen, newClose ) }
                             className={ clsx( props.className, "times new save" ) }
                         >
-                            { __( "Save", "wp_bepalmet_custom" ) }
+                            { __( "Save", "wp-bepalmet-custom" ) }
                             </Button>
                         <Button 
                             onClick={ () => isNewStates[props.day].newDay[1]( false ) }
                             className={ clsx( props.className, "times new abort" ) }
                         >
-                            { __( "Abort", "wp_bepalmet_custom" ) }
+                            { __( "Abort", "wp-bepalmet-custom" ) }
                         </Button>
                     </div>
                 );
@@ -415,7 +415,7 @@ export default function EditOpeningHours(
                         onClick={ () => handleClick(props) }
                         className={ clsx( props.className, "times edit" ) }
                     >
-                        { __( "Edit", "wp_bepalmet_custom" ) }
+                        { __( "Edit", "wp-bepalmet-custom" ) }
                     </Button>
                     <DeleteModal { ...props }/>
                 </PanelRow>
@@ -425,14 +425,14 @@ export default function EditOpeningHours(
         const Weekday = ( { ...props } ) => (
             <Panel>
                 <PanelBody 
-                    title={ __( GV.weekdays(props.day), "wp_bepalmet_custom" ) } 
+                    title={ __( GV.weekdays(props.day), "wp-bepalmet-custom" ) } 
                     initialOpen={ typeof props.rows !== 'undefined' || isNewStates[props.day].newDay[0] }
                 >
                     <Button 
                         onClick={ () => isNewStates[props.day].newDay[1]( true ) }
                         className={ clsx( props.className, "times new" ) }
                     >
-                        { __( "Add time", "wp_bepalmet_custom" ) }
+                        { __( "Add time", "wp-bepalmet-custom" ) }
                     </Button>
                     <NewTime
                         { ...props }
@@ -522,8 +522,8 @@ export default function EditOpeningHours(
                         value={ infoStates[props.info.id][0] }
                         blockRef={ blockRef }
                     />
-                    <Button onClick={ saveClick }>{ __( "Save", "wp_bepalmet_custom" ) }</Button>
-                    <Button onClick={ abortClick }>{ __( "Abort", "wp_bepalmet_custom" ) }</Button>
+                    <Button onClick={ saveClick }>{ __( "Save", "wp-bepalmet-custom" ) }</Button>
+                    <Button onClick={ abortClick }>{ __( "Abort", "wp-bepalmet-custom" ) }</Button>
                 </div>
             );
 
@@ -558,8 +558,8 @@ export default function EditOpeningHours(
                             value={ '' }
                             blockRef={ blockRef }
                         />
-                        <Button onClick={ saveNewInfo }>{ __( "Save", "wp_bepalmet_custom" ) }</Button>
-                        <Button onClick={ () => setIsNewInfo( false ) }>{ __( "Abort", "wp_bepalmet_custom" ) }</Button>
+                        <Button onClick={ saveNewInfo }>{ __( "Save", "wp-bepalmet-custom" ) }</Button>
+                        <Button onClick={ () => setIsNewInfo( false ) }>{ __( "Abort", "wp-bepalmet-custom" ) }</Button>
                     </div>
                 )
 
@@ -587,7 +587,7 @@ export default function EditOpeningHours(
                         onClick={ () => handleClickInfo(props) }
                         className={ clsx( props.className, "info edit" ) }
                     >
-                        { __( "Edit", "wp_bepalmet_custom" ) }
+                        { __( "Edit", "wp-bepalmet-custom" ) }
                     </Button>
                     <DeleteModal 
                         { ...props }
@@ -617,7 +617,7 @@ export default function EditOpeningHours(
                     onClick={ () => setIsNewInfo( true ) }
                     className={ clsx( props.className, "info new" ) }
                 >
-                    { __( "Add info", "wp_bepalmet_custom" ) }
+                    { __( "Add info", "wp-bepalmet-custom" ) }
                 </Button>
                 <NewInfo/>
             </>
@@ -669,7 +669,7 @@ export default function EditOpeningHours(
                 >
                     <ToggleControl
                         __nextHasNoMarginBottom
-                        label={ __( "phone", "wp_bepalmet_custom" ) }
+                        label={ __( "phone", "wp-bepalmet-custom" ) }
                         checked={ phoneActive }
                         onChange={ (state) => handleChange( state, "phone" ) }
                     />
@@ -678,7 +678,7 @@ export default function EditOpeningHours(
                             <TextControl
                                 __nextHasNoMarginBottom
                                 __next40pxDefaultSize
-                                label={ __( "Phone Number", "wp_bepalmet_custom" ) }
+                                label={ __( "Phone Number", "wp-bepalmet-custom" ) }
                                 value={ tempPhone }
                                 onChange={ ( newValue ) => setTempPhone( newValue) }
                             />
@@ -686,7 +686,7 @@ export default function EditOpeningHours(
                                 variant='primary'
                                 onClick={ () => handleSaveText( "phone", tempPhone ) }
                             >
-                                { __( "Save", "wp_bepalmet_custom" ) }
+                                { __( "Save", "wp-bepalmet-custom" ) }
                             </Button>
                         </>
                     }
@@ -701,7 +701,7 @@ export default function EditOpeningHours(
                                 variant='primary'
                                 onClick={ () => setEditPhone( ( true ) ) }
                             >
-                                { __( "Edit", "wp_bepalmet_custom" ) }
+                                { __( "Edit", "wp-bepalmet-custom" ) }
                             </Button>
                         </>
                     }
@@ -711,7 +711,7 @@ export default function EditOpeningHours(
                 >
                     <ToggleControl
                         __nextHasNoMarginBottom
-                        label={ __( "fax", "wp_bepalmet_custom" ) }
+                        label={ __( "fax", "wp-bepalmet-custom" ) }
                         checked={ faxActive }
                         onChange={ (state) => handleChange( state, "fax" ) }
                     />
@@ -720,7 +720,7 @@ export default function EditOpeningHours(
                             <TextControl
                                 __nextHasNoMarginBottom
                                 __next40pxDefaultSize
-                                label={ __( "Fax Number", "wp_bepalmet_custom" ) }
+                                label={ __( "Fax Number", "wp-bepalmet-custom" ) }
                                 value={ tempFax }
                                 onChange={ ( newValue ) => setTempFax( newValue ) }
                             />
@@ -728,7 +728,7 @@ export default function EditOpeningHours(
                                 variant='primary'
                                 onClick={ () => handleSaveText( "fax", tempFax ) }
                             >
-                                { __( "Save", "wp_bepalmet_custom" ) }
+                                { __( "Save", "wp-bepalmet-custom" ) }
                             </Button>
                         </>
                     }
@@ -743,7 +743,7 @@ export default function EditOpeningHours(
                                 variant='primary'
                                 onClick={ () => setEditFax( ( true ) ) }
                             >
-                                { __( "Edit", "wp_bepalmet_custom" ) }
+                                { __( "Edit", "wp-bepalmet-custom" ) }
                             </Button>
                         </>
                     }
@@ -753,7 +753,7 @@ export default function EditOpeningHours(
                 >
                     <ToggleControl
                         __nextHasNoMarginBottom
-                        label={ __( "mail", "wp_bepalmet_custom" ) }
+                        label={ __( "mail", "wp-bepalmet-custom" ) }
                         checked={ mailActive }
                         onChange={ (state) => handleChange( state, "mail" ) }
                     />
@@ -762,7 +762,7 @@ export default function EditOpeningHours(
                             <TextControl
                                 __nextHasNoMarginBottom
                                 __next40pxDefaultSize
-                                label={ __( "E-Mail address", "wp_bepalmet_custom" ) }
+                                label={ __( "E-Mail address", "wp-bepalmet-custom" ) }
                                 value={ tempMail }
                                 onChange={ ( newValue ) => setTempMail( newValue) }
                             />
@@ -770,7 +770,7 @@ export default function EditOpeningHours(
                                 variant='primary'
                                 onClick={ () => handleSaveText( "mail", tempMail ) }
                             >
-                                { __( "Save", "wp_bepalmet_custom" ) }
+                                { __( "Save", "wp-bepalmet-custom" ) }
                             </Button>
                         </>
                     }
@@ -785,7 +785,7 @@ export default function EditOpeningHours(
                                 variant='primary'
                                 onClick={ () => setEditMail( ( true ) ) }
                             >
-                                { __( "Edit", "wp_bepalmet_custom" ) }
+                                { __( "Edit", "wp-bepalmet-custom" ) }
                             </Button>
                         </>
                     }
@@ -795,7 +795,7 @@ export default function EditOpeningHours(
                 >
                     <ToggleControl
                         __nextHasNoMarginBottom
-                        label={ __( "address", "wp_bepalmet_custom" ) }
+                        label={ __( "address", "wp-bepalmet-custom" ) }
                         checked={ addressActive }
                         onChange={ (state) => handleChange( state, "address" ) }
                     />
@@ -804,7 +804,7 @@ export default function EditOpeningHours(
                             <TextControl
                                 __nextHasNoMarginBottom
                                 __next40pxDefaultSize
-                                label={ __( "Address", "wp_bepalmet_custom" ) }
+                                label={ __( "Address", "wp-bepalmet-custom" ) }
                                 value={ tempAddress }
                                 onChange={ ( newValue ) => setTempAddress( newValue) }
                             />
@@ -812,7 +812,7 @@ export default function EditOpeningHours(
                                 variant='primary'
                                 onClick={ () => handleSaveText( "address", tempAddress ) }
                             >
-                                { __( "Save", "wp_bepalmet_custom" ) }
+                                { __( "Save", "wp-bepalmet-custom" ) }
                             </Button>
                         </>
                     }
@@ -827,7 +827,7 @@ export default function EditOpeningHours(
                                 variant='primary'
                                 onClick={ () => setEditAddress( ( true ) ) }
                             >
-                                { __( "Edit", "wp_bepalmet_custom" ) }
+                                { __( "Edit", "wp-bepalmet-custom" ) }
                             </Button>
                         </>
                     }
@@ -844,7 +844,7 @@ export default function EditOpeningHours(
             />
             <Panel>
                 <PanelBody 
-                    title={ __( "General info", "wp_bepalmet_custom" ) }
+                    title={ __( "General info", "wp-bepalmet-custom" ) }
                 >
                     <InfoBody/>
                 </PanelBody>
@@ -861,7 +861,7 @@ export default function EditOpeningHours(
             <Header className={ clsx( props.className, "header" ) }/>
             <Panel>
                 <PanelBody 
-                    title={ __( "Days of week", "wp_bepalmet_custom" ) }
+                    title={ __( "Days of week", "wp-bepalmet-custom" ) }
                     className={ clsx( props.className, "panel times" ) }
                 >
                     <TimeBody/>
@@ -869,7 +869,7 @@ export default function EditOpeningHours(
             </Panel>
             <Panel>
                 <PanelBody 
-                    title={ __( "Additional info", "wp_bepalmet_custom" ) }
+                    title={ __( "Additional info", "wp-bepalmet-custom" ) }
                     className={ clsx( props.className, "panel info" ) }
                 >
                     <InfoBody/>
@@ -877,7 +877,7 @@ export default function EditOpeningHours(
             </Panel>
             <Panel>
                 <PanelBody 
-                    title= { __( "Contact information", "wp_bepalmet_custom" ) } 
+                    title= { __( "Contact information", "wp-bepalmet-custom" ) } 
                     className={ clsx( props.className, "panel contacts" ) }
                 >
                     <ContactBody/>
@@ -936,12 +936,12 @@ export default function EditOpeningHours(
         return (
         <>
             <Navigator.BackButton>
-                { __( "Back", "wp_bepalmet_custom" ) }
+                { __( "Back", "wp-bepalmet-custom" ) }
             </Navigator.BackButton>
             <TextControl
                 __nextHasNoMarginBottom
                 __next40pxDefaultSize
-                label={ __( "Enter name of new location to add:", "wp_bepalmet_custom" ) }
+                label={ __( "Enter name of new location to add:", "wp-bepalmet-custom" ) }
                 value={ newLocText }
                 onChange={ ( newText ) => setNewLocText( newText ) }
             />
@@ -950,7 +950,7 @@ export default function EditOpeningHours(
                 onClick={ handleButton }
                 type='submit'
             >
-                { __( "Save", "wp_bepalmet_custom" ) }
+                { __( "Save", "wp-bepalmet-custom" ) }
             </Button>
         </>
         );

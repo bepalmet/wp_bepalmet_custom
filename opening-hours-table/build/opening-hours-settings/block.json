@@ -5,7 +5,7 @@
   "description": "bepalmet_custom settings",
   "title": "Opening hours",
   "version": "1.0.0",
-  "textdomain": "wp_bepalmet_custom",
+  "textdomain": "wp-bepalmet-custom",
   "editorScript": "file:./index.js",
   "style": "file:./styles.scss"
 }
