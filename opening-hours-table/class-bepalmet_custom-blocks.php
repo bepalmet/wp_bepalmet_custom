@@ -41,6 +41,15 @@ class Bepalmet_Custom_Blocks {
 	private $version;
 
 	/**
+	 * The blocks of this plugin.
+	 *
+	 * @since    1.0.0
+	 * @access   private
+	 * @var      string[]    $blocks    The blocks ofthis plugin.
+	 */
+	private $blocks;
+
+	/**
 	 * Initialize the class and set its properties.
 	 *
 	 * @since    1.0.0
@@ -51,6 +60,10 @@ class Bepalmet_Custom_Blocks {
 
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
+		$this->blocks = [
+			'opening-hours-block',
+			'text-with-format'
+		];
 
 	}
 
@@ -59,14 +72,36 @@ class Bepalmet_Custom_Blocks {
 	 *
 	 * @since    1.0.0
 	 */
+
 	public function register_blocks() {
 
 		/**
 		 * Add all blocks to register below.
 		 */
 
-		register_block_type( plugin_dir_path( __FILE__ ) . 'build/opening-hours-block' );
-		register_block_type( plugin_dir_path( __FILE__ ) . 'build/text-with-format' );
+		foreach ( $this->blocks as $block ) {
+			register_block_type( 
+				plugin_dir_path( __FILE__ ) . 'build/' . $block 
+			);
+		}
+
+	}
+
+	/**
+	 * Load translations
+	 *
+	 * @since    1.0.0
+	 */
+
+	public function load_translations() {
+
+		foreach ( $this->blocks as $block ) {
+			wp_set_script_translations(
+				plugin_dir_path( __FILE__ ) . 'build/' . $block . 'index.js',
+				'bepalmet_custom',
+				plugin_dir_path( dirname( __FILE__ ) ) . 'languages'
+			);
+		}
 
 	}
 
@@ -75,6 +110,7 @@ class Bepalmet_Custom_Blocks {
 	 *
 	 * @since    1.0.0
 	 */
+
 	public function enqueue_styles() {
 
 		/**
@@ -89,8 +125,13 @@ class Bepalmet_Custom_Blocks {
 		 * class.
 		 */
 
-		wp_enqueue_style( "$this->plugin_name-block-style", plugin_dir_url( __FILE__ ) . 'build/opening-hours-block/index.css', array(), $this->version, 'all' );
-		wp_enqueue_style( "$this->plugin_name-block-style", plugin_dir_url( __FILE__ ) . 'build/text-with-format/index.css', array(), $this->version, 'all' );
+		foreach ( $this->blocks as $block ) {
+			wp_enqueue_style( 
+				"$this->plugin_name-block-style", 
+				plugin_dir_url( __FILE__ ) . 'build/' . $block . '/index.css', 
+				array(), $this->version, 'all' 
+			);
+		}
 
 	}
 
