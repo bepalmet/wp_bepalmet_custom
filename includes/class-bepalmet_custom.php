@@ -167,7 +167,7 @@ class Bepalmet_Custom {
 
 		$plugin_i18n = new Bepalmet_Custom_i18n();
 
-		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
+		$this->loader->add_action( 'init', $plugin_i18n, 'load_plugin_textdomain' );
 
 	}
 
