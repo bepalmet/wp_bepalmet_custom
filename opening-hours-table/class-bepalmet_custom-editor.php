@@ -186,7 +186,7 @@ class Bepalmet_Custom_Editor {
         $script_handle = $this->editor . '-script';
         wp_set_script_translations( 
             $script_handle, 
-            'bepalmet_custom', 
+            'wp_bepalmet_custom', 
             plugin_dir_path( dirname( __FILE__) ) . "languages" 
         );
 

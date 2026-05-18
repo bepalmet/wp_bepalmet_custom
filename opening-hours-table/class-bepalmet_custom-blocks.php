@@ -96,11 +96,12 @@ class Bepalmet_Custom_Blocks {
 	public function load_translations() {
 
 		foreach ( $this->blocks as $block ) {
-			wp_set_script_translations(
-				plugin_dir_path( __FILE__ ) . 'build/' . $block . 'index.js',
-				'bepalmet_custom',
+			$return_code = wp_set_script_translations(
+				plugin_dir_path( __FILE__ ) . 'build/' . $block . '/index.js',
+				'wp_bepalmet_custom',
 				plugin_dir_path( dirname( __FILE__ ) ) . 'languages'
 			);
+			error_log( $return_code );
 		}
 
 	}

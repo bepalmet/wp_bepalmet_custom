@@ -17,7 +17,7 @@
 			"source": "html"
 		}
 	},
-	"textdomain": "text-with-format",
+	"textdomain": "wp_bepalmet_custom",
 	"editorScript": "file:./index.js",
 	"style": "file:./styles.scss"
 }

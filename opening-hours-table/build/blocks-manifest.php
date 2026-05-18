@@ -36,7 +36,7 @@ return array(
 		'description' => 'bepalmet_custom settings',
 		'title' => 'Opening hours',
 		'version' => '1.0.0',
-		'textdomain' => 'bepalmet_custom',
+		'textdomain' => 'wp_bepalmet_custom',
 		'editorScript' => 'file:./index.js',
 		'style' => 'file:./styles.scss'
 	),

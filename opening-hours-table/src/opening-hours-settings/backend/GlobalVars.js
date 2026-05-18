@@ -36,13 +36,13 @@ class GlobalVars {
             short = parseInt(short);
         }
         return {
-            1: short ? __( "Mo", "bepalmet_custom" ) : __( "Monday", "bepalmet_custom" ),
-            2: short ? __( "Tu", "bepalmet_custom" ) : __( "Tuesday", "bepalmet_custom" ),
-            3: short ? __( "We", "bepalmet_custom" ) : __( "Wednesday", "bepalmet_custom" ),
-            4: short ? __( "Th", "bepalmet_custom" ) : __( "Thursday", "bepalmet_custom" ),
-            5: short ? __( "Fr", "bepalmet_custom" ) : __( "Friday", "bepalmet_custom" ),
-            6: short ? __( "Sa", "bepalmet_custom" ) : __( "Saturday", "bepalmet_custom" ),
-            7: short ? __( "So", "bepalmet_custom" ) : __( "Sunday", "bepalmet_custom" )
+            1: short ? __( "Mo", "wp_bepalmet_custom" ) : __( "Monday", "wp_bepalmet_custom" ),
+            2: short ? __( "Tu", "wp_bepalmet_custom" ) : __( "Tuesday", "wp_bepalmet_custom" ),
+            3: short ? __( "We", "wp_bepalmet_custom" ) : __( "Wednesday", "wp_bepalmet_custom" ),
+            4: short ? __( "Th", "wp_bepalmet_custom" ) : __( "Thursday", "wp_bepalmet_custom" ),
+            5: short ? __( "Fr", "wp_bepalmet_custom" ) : __( "Friday", "wp_bepalmet_custom" ),
+            6: short ? __( "Sa", "wp_bepalmet_custom" ) : __( "Saturday", "wp_bepalmet_custom" ),
+            7: short ? __( "So", "wp_bepalmet_custom" ) : __( "Sunday", "wp_bepalmet_custom" )
         }[weekday] };
 
     /**

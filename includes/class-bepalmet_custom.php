@@ -72,7 +72,7 @@ class Bepalmet_Custom {
 		} else {
 			$this->version = '1.0.0';
 		}
-		$this->plugin_name = 'bepalmet_custom';
+		$this->plugin_name = 'wp_bepalmet_custom';
 
 		$this->define_global_static_hooks();
 		$this->load_dependencies();
