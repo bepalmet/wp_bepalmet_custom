@@ -1,0 +1,39 @@
+{
+    "translation-revision-date": "YEAR-MO-DA HO:MI+ZONE",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "opening-hours-table\/src\/opening-hours-settings\/OpeningHoursTable\/OpeningHoursTable.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "en",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Closed": [
+                "Closed"
+            ],
+            "Openings": [
+                "Openings"
+            ],
+            "Contact": [
+                "Contact"
+            ],
+            "Phone Number:": [
+                "Phone Number:"
+            ],
+            "Fax Number:": [
+                "Fax Number:"
+            ],
+            "E-Mail Address:": [
+                "E-Mail Address:"
+            ],
+            "Address:": [
+                "Address:"
+            ],
+            "Opening hours and contact": [
+                "Opening hours and contact"
+            ]
+        }
+    }
+}

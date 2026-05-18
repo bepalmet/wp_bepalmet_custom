@@ -4,8 +4,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bepalmet custom plugin 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp_bepalmet_custom\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Benedikt Palmetshofer <admin@bepalmet.de>\n"
+"Language-Team: Plugin creator <plugins@bepalmet.de>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,211 +18,211 @@ msgstr ""
 #. Plugin Name of the plugin
 #: wp_bepalmet_custom.php
 msgid "bepalmet custom plugin"
-msgstr ""
+msgstr "bepalmet custom plugin"
 
 #. Plugin URI of the plugin
 #: wp_bepalmet_custom.php
 msgid "http://example.com/bepalmet_custom-uri/"
-msgstr ""
+msgstr "https://bepalmet.de/plugins/wp_bepalmet_custom"
 
 #. Description of the plugin
 #: wp_bepalmet_custom.php
 msgid "This is a short description of what the plugin does. It's displayed in the WordPress admin area."
-msgstr ""
+msgstr "Plugin to implement own custom functionality"
 
 #. Author of the plugin
 #: wp_bepalmet_custom.php
 msgid "Your Name or Your Company"
-msgstr ""
+msgstr "Benedikt Palmetshofer"
 
 #. Author URI of the plugin
 #: wp_bepalmet_custom.php
 msgid "http://example.com/"
-msgstr ""
+msgstr "https://bepalmet.de"
 
 #: admin/class-bepalmet_custom-admin.php:120
 msgid "Settings for bepalmet-custom"
-msgstr ""
+msgstr "Settings for bepalmet-custom"
 
 #: admin/import-export/class-bepalmet_custom-exporter.php:78
 #: admin/import-export/class-bepalmet_custom-importer.php:46
 msgid "Sie haben keine Berechtigung für diese Aktion."
-msgstr ""
+msgstr "You don't have permission"
 
 #: admin/import-export/class-bepalmet_custom-exporter.php:83
 #: admin/import-export/class-bepalmet_custom-importer.php:51
 msgid "Sicherheitsprüfung fehlgeschlagen."
-msgstr ""
+msgstr "Security check failed"
 
 #: admin/import-export/class-bepalmet_custom-importer.php:57
 msgid "Your file is too large."
-msgstr ""
+msgstr "Your file is too large."
 
 #: admin/import-export/class-bepalmet_custom-importer.php:62
 msgid "Only JSON files allowed"
-msgstr ""
+msgstr "Only JSON files allowed"
 
 #: admin/import-export/class-bepalmet_custom-importer.php:67
 msgid "An Error occured and the file was not uploaded"
-msgstr ""
+msgstr "An Error occured and the file was not uploaded"
 
 #: opening-hours-table/build/opening-hours-block/render.php:36
 #: opening-hours-table/src/opening-hours-block/render.php:36
 msgid "Phone"
-msgstr ""
+msgstr "Phone"
 
 #: opening-hours-table/build/opening-hours-block/render.php:37
 #: opening-hours-table/src/opening-hours-block/render.php:37
 msgid "Fax"
-msgstr ""
+msgstr "Fax"
 
 #: opening-hours-table/build/opening-hours-block/render.php:38
 #: opening-hours-table/src/opening-hours-block/render.php:38
 msgid "E-Mail"
-msgstr ""
+msgstr "E-Mail"
 
 #: opening-hours-table/build/opening-hours-block/render.php:39
 #: opening-hours-table/src/opening-hours-block/render.php:39
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:807
 msgid "Address"
-msgstr ""
+msgstr "Address"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:1
 #: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:39
 msgid "Mo"
-msgstr ""
+msgstr "Mo"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:1
 #: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:39
 msgid "Monday"
-msgstr ""
+msgstr "Monday"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:1
 #: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:40
 msgid "Tu"
-msgstr ""
+msgstr "Tu"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:1
 #: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:40
 msgid "Tuesday"
-msgstr ""
+msgstr "Tuesday"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:1
 #: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:41
 msgid "We"
-msgstr ""
+msgstr "We"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:1
 #: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:41
 msgid "Wednesday"
-msgstr ""
+msgstr "Wednesday"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:1
 #: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:42
 msgid "Th"
-msgstr ""
+msgstr "Th"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:1
 #: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:42
 msgid "Thursday"
-msgstr ""
+msgstr "Thursday"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:1
 #: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:43
 msgid "Fr"
-msgstr ""
+msgstr "Fr"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:1
 #: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:43
 msgid "Friday"
-msgstr ""
+msgstr "Friday"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:1
 #: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:44
 msgid "Sa"
-msgstr ""
+msgstr "Sa"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:1
 #: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:44
 msgid "Saturday"
-msgstr ""
+msgstr "Saturday"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:1
 #: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:45
 msgid "So"
-msgstr ""
+msgstr "So"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:1
 #: opening-hours-table/src/opening-hours-settings/backend/GlobalVars.js:45
 msgid "Sunday"
-msgstr ""
+msgstr "Sunday"
 
 #. translators: accessibility text for the footer landmark region.
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/Sidebar/SidebarPanel.js:85
 msgid "Additional settings"
-msgstr ""
+msgstr "Additional settings"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/Sidebar/SidebarPanel.js:102
 msgid "Multisite Settings"
-msgstr ""
+msgstr "Multisite Settings"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/Header/index.js:12
 msgid "Opening Hours Settings top bar."
-msgstr ""
+msgstr "Opening Hours Settings top bar."
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/Header/index.js:19
 msgid "Opening Hours Settings"
-msgstr ""
+msgstr "Opening Hours Settings"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/LocationOrderDraggable.js:136
 msgid "Save order"
-msgstr ""
+msgstr "Save order"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/GeneralSettings.js:139
 msgid "Deselect all"
-msgstr ""
+msgstr "Deselect all"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/GeneralSettings.js:139
 msgid "Select all"
-msgstr ""
+msgstr "Select all"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/GeneralSettings.js:185
 msgid "Shown locations in order"
-msgstr ""
+msgstr "Shown locations in order"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/GeneralSettings.js:190
 msgid "Drag by holding click on an element and moving the mouse"
-msgstr ""
+msgstr "Drag by holding click on an element and moving the mouse"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/GeneralSettings.js:192
 msgid "You can change the order of the shown locations by draging them"
-msgstr ""
+msgstr "You can change the order of the shown locations by draging them"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/GeneralSettings.js:208
 msgid "Hidden locations"
-msgstr ""
+msgstr "Hidden locations"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:939
 msgid "Back"
-msgstr ""
+msgstr "Back"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:944
 msgid "Enter name of new location to add:"
-msgstr ""
+msgstr "Enter name of new location to add:"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:198
@@ -235,13 +236,13 @@ msgstr ""
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:815
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:953
 msgid "Save"
-msgstr ""
+msgstr "Save"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:127
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:141
 msgid "Delete"
-msgstr ""
+msgstr "Delete"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:148
@@ -251,42 +252,42 @@ msgstr ""
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:526
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:562
 msgid "Abort"
-msgstr ""
+msgstr "Abort"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:161
 msgid "General settings"
-msgstr ""
+msgstr "General settings"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:195
 msgid "Name of the location"
-msgstr ""
+msgstr "Name of the location"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:227
 msgid "Site: "
-msgstr ""
+msgstr "Site: "
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:227
 msgid "Global"
-msgstr ""
+msgstr "Global"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:235
 msgid "Edit name"
-msgstr ""
+msgstr "Edit name"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:306
 msgid "Open:"
-msgstr ""
+msgstr "Open:"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:312
 msgid "Close:"
-msgstr ""
+msgstr "Close:"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:418
@@ -296,127 +297,127 @@ msgstr ""
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:788
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:830
 msgid "Edit"
-msgstr ""
+msgstr "Edit"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:435
 msgid "Add time"
-msgstr ""
+msgstr "Add time"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:620
 msgid "Add info"
-msgstr ""
+msgstr "Add info"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:672
 msgid "phone"
-msgstr ""
+msgstr "phone"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:681
 msgid "Phone Number"
-msgstr ""
+msgstr "Phone Number"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:714
 msgid "fax"
-msgstr ""
+msgstr "fax"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:723
 msgid "Fax Number"
-msgstr ""
+msgstr "Fax Number"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:756
 msgid "mail"
-msgstr ""
+msgstr "mail"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:765
 msgid "E-Mail address"
-msgstr ""
+msgstr "E-Mail address"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:798
 msgid "address"
-msgstr ""
+msgstr "address"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:847
 msgid "General info"
-msgstr ""
+msgstr "General info"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:864
 msgid "Days of week"
-msgstr ""
+msgstr "Days of week"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:872
 msgid "Additional info"
-msgstr ""
+msgstr "Additional info"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/EditOpeningHours.js:880
 msgid "Contact information"
-msgstr ""
+msgstr "Contact information"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:148
 msgid "Closed"
-msgstr ""
+msgstr "Closed"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:149
 msgid "Openings"
-msgstr ""
+msgstr "Openings"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:150
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:151
 msgid "Contact"
-msgstr ""
+msgstr "Contact"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:284
 msgid "Phone Number:"
-msgstr ""
+msgstr "Phone Number:"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:285
 msgid "Fax Number:"
-msgstr ""
+msgstr "Fax Number:"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:286
 msgid "E-Mail Address:"
-msgstr ""
+msgstr "E-Mail Address:"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:287
 msgid "Address:"
-msgstr ""
+msgstr "Address:"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/OpeningHoursTable.js:398
 msgid "Opening hours and contact"
-msgstr ""
+msgstr "Opening hours and contact"
 
 #: opening-hours-table/build/opening-hours-settings/index.js:13
 #: opening-hours-table/src/opening-hours-settings/OpeningHoursTable/index.js:213
 msgid "Opening Hours Settings Places"
-msgstr ""
+msgstr "Opening Hours Settings Places"
 
 #: opening-hours-table/build/opening-hours-settings/block.json
 #: opening-hours-table/src/opening-hours-settings/block.json
 msgctxt "block description"
 msgid "bepalmet_custom settings"
-msgstr ""
+msgstr "bepalmet_custom settings"
 
 #: opening-hours-table/build/opening-hours-settings/block.json
 #: opening-hours-table/src/opening-hours-settings/block.json
 msgctxt "block title"
 msgid "Opening hours"
-msgstr ""
+msgstr "Opening hours"
