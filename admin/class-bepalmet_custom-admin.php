@@ -6,8 +6,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Bepalmet_Custom
- * @subpackage Bepalmet_Custom/admin
+ * @package    Bepalmet-Custom
+ * @subpackage Bepalmet-Custom/admin
  */
 
 /**
@@ -16,8 +16,8 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Bepalmet_Custom
- * @subpackage Bepalmet_Custom/admin
+ * @package    Bepalmet-Custom
+ * @subpackage Bepalmet-Custom/admin
  * @author     Your Name <email@example.com>
  */
 class Bepalmet_Custom_Admin {

@@ -9,8 +9,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Bepalmet_Custom
- * @subpackage Bepalmet_Custom/includes
+ * @package    Bepalmet-Custom
+ * @subpackage Bepalmet-Custom/includes
  */
 
 /**
@@ -23,8 +23,8 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Bepalmet_Custom
- * @subpackage Bepalmet_Custom/includes
+ * @package    Bepalmet-Custom
+ * @subpackage Bepalmet-Custom/includes
  * @author     Benedikt Palmetshofer <plugins@bepalmet.de>
  */
 class Bepalmet_Custom {

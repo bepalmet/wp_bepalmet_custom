@@ -10,11 +10,11 @@
  *
  * @link              http://example.com
  * @since             1.0.0
- * @package           Bepalmet_Custom
+ * @package           Bepalmet-Custom
  *
  * @wordpress-plugin
  * Plugin Name:       bepalmet custom plugin
- * Plugin URI:        http://example.com/bepalmet_custom-uri/
+ * Plugin URI:        http://example.com/bepalmet-custom-uri/
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
  * Version:           1.0.0
  * Author:            Your Name or Your Company

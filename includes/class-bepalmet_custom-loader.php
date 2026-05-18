@@ -6,8 +6,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Bepalmet_Custom
- * @subpackage Bepalmet_Custom/includes
+ * @subpackage Bepalmet-Custom/includes
+ * @package    Bepalmet-Custom
  */
 
 /**
@@ -17,8 +17,8 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Bepalmet_Custom
- * @subpackage Bepalmet_Custom/includes
+ * @package    Bepalmet-Custom
+ * @subpackage Bepalmet-Custom/includes
  * @author     Your Name <email@example.com>
  */
 class Bepalmet_Custom_Loader {

@@ -8,8 +8,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Bepalmet_Custom
- * @subpackage Bepalmet_Custom/admin/partials
+ * @package    Bepalmet-Custom
+ * @subpackage Bepalmet-Custom/admin/partials
  */
 // Generiert die Sicherheits-URL mit einer Nonce zur Absicherung gegen CSRF
 $download_url = wp_nonce_url(

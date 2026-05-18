@@ -6,8 +6,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Bepalmet_Custom
- * @subpackage Bepalmet_Custom/blocks
+ * @package    Bepalmet-Custom
+ * @subpackage Bepalmet-Custom/blocks
  */
 
 /**
@@ -16,8 +16,8 @@
  * Defines the plugin name, version, and a function to register
  * the block specific hooks
  *
- * @package    Bepalmet_Custom
- * @subpackage Bepalmet_Custom/blocks
+ * @package    Bepalmet-Custom
+ * @subpackage Bepalmet-Custom/blocks
  * @author     Your Name <email@example.com>
  */
 class Bepalmet_Custom_Blocks {

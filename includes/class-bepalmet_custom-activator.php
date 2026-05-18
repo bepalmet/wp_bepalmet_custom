@@ -6,8 +6,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Bepalmet_Custom
- * @subpackage Bepalmet_Custom/includes
+ * @package    Bepalmet-Custom
+ * @subpackage Bepalmet-Custom/includes
  */
 
 /**
@@ -16,8 +16,8 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Bepalmet_Custom
- * @subpackage Bepalmet_Custom/includes
+ * @package    Bepalmet-Custom
+ * @subpackage Bepalmet-Custom/includes
  * @author     Your Name <email@example.com>
  */
 

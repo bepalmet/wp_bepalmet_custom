@@ -6,8 +6,8 @@
  * @link       http://bepalmet.de/wp_custom
  * @since      1.0.0
  *
- * @package    Bepalmet_Custom
- * @subpackage Bepalmet_Custom/blocks/src/opening-hours-settings/backend
+ * @package    Bepalmet-Custom
+ * @subpackage Bepalmet-Custom/blocks/src/opening-hours-settings/backend
  */
 
 /**
@@ -18,8 +18,8 @@
  * It mainly includes the functions to get, set anc update the database entries of the plugin
  *
  * @since      1.0.0
- * @package    Bepalmet_Custom
- * @subpackage Bepalmet_Custom/blocks/src/opening-hours-settings/backend
+ * @package    Bepalmet-Custom
+ * @subpackage Bepalmet-Custom/blocks/src/opening-hours-settings/backend
  * @author     Benedikt Palmetshofer
  */
 // Source - https://stackoverflow.com/a/70397147

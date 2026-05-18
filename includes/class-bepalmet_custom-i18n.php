@@ -9,8 +9,8 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Bepalmet_Custom
- * @subpackage Bepalmet_Custom/includes
+ * @package    Bepalmet-Custom
+ * @subpackage Bepalmet-Custom/includes
  */
 
 /**
@@ -20,8 +20,8 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Bepalmet_Custom
- * @subpackage Bepalmet_Custom/includes
+ * @package    Bepalmet-Custom
+ * @subpackage Bepalmet-Custom/includes
  * @author     Your Name <email@example.com>
  */
 class Bepalmet_Custom_i18n {
