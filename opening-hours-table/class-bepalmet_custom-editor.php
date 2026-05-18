@@ -100,7 +100,7 @@ class Bepalmet_Custom_Editor {
         $script_asset      = file_exists( $script_asset_path )
             ? require $script_asset_path
             : array(
-                'dependencies' => array('jquery'),
+                'dependencies' => array( 'jquery', 'wp-i18n' ),
                 'version'      => '0.1.0'
             );
         $script_url        = plugins_url( $script_path, __FILE__ );
@@ -178,12 +178,28 @@ class Bepalmet_Custom_Editor {
     }
 
     /**
+     * Load the tranlations of the custom editor
+     */
+
+    public function load_translations() {
+
+        $script_handle = $this->editor . '-script';
+        wp_set_script_translations( 
+            $script_handle, 
+            'bepalmet_custom', 
+            plugin_dir_path( dirname( __FILE__) ) . "languages" 
+        );
+
+    }
+
+    /**
      * Function to initialize settings of the editors
      * 
      * @return      array      Key value pairs of strings for settings
      */
 
     private function init_settings() {
+
         $settings = array();
         list( $color_palette, ) = (array) get_theme_support( 'editor-color-palette' );
         list( $font_sizes, )    = (array) get_theme_support( 'editor-font-sizes' );
@@ -194,6 +210,7 @@ class Bepalmet_Custom_Editor {
             $settings['fontSizes'] = $font_sizes;
         }
         return $settings;
+        
     }
 
 	/**

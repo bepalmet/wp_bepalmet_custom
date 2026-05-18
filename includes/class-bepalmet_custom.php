@@ -188,10 +188,11 @@ class Bepalmet_Custom {
 		$this->loader->add_action( 'rest_api_init', $plugin_admin, 'enqueue_rest_route_registration' );
 
 		//Init the custom editors
-		$custom_editors = new Bepalmet_Custom_Editor( $this->get_plugin_name(), $this->get_version(), 'opening-hours-settings' );
-		$this->loader->add_action( 'admin_enqueue_scripts', $custom_editors, 'editor_init' );
-		$this->loader->add_action( 'admin_enqueue_scripts', $custom_editors, 'enqueue_styles' );
-		$this->loader->add_action( 'rest_api_init', $custom_editors, 'api_init' );
+		$ohs_editor = new Bepalmet_Custom_Editor( $this->get_plugin_name(), $this->get_version(), 'opening-hours-settings' );
+		$this->loader->add_action( 'admin_enqueue_scripts', $ohs_editor, 'editor_init' );
+		$this->loader->add_action( 'admin_enqueue_scripts', $ohs_editor, 'enqueue_styles' );
+		$this->loader->add_action( 'rest_api_init', $ohs_editor, 'api_init' );
+		$this->loader->add_action( 'init', $ohs_editor, 'load_translations' );
 
 		$exporter = new Bepalmet_Custom_Exporter( $this->get_plugin_name(), $this->get_version() );
 		$this->loader->add_action( 'admin_post_bepalmet_download_export', $exporter, 'bepalmet_handle_export_download' );
@@ -215,8 +216,6 @@ class Bepalmet_Custom {
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
-		//$this->loader->add_shortcode( 'bepalmet_opening', $plugin_public, 'get_opening_hours' );
-
 	}
 
 	/**
@@ -231,6 +230,7 @@ class Bepalmet_Custom {
 		$plugin_blocks = new Bepalmet_Custom_Blocks( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'init', $plugin_blocks, 'register_blocks' );
+		$this->loader->add_action( 'init', $plugin_blocks, 'load_translations' );
 		$this->loader->add_action( 'enqueue_block_assets', $plugin_blocks, 'enqueue_styles', PHP_INT_MAX );
 		$this->loader->add_action( 'init', $plugin_blocks, 'register_shortcodes', 20 );
 
