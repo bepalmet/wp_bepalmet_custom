@@ -39,14 +39,24 @@ class Bepalmet_Custom_Exporter {
 
         $tables = [];
 
-        $get_local_tables = $wpdb->get_results( "SHOW TABLES LIKE '%bepalmet_custom%'", ARRAY_N );
-        foreach ( $get_local_tables as $one ) {
-            $tables[] = $one[0];
+        if ( !current_user_can( 'edit_posts' ) ) {
+            wp_die(__('Sie haben keine Berechtigung für diese Aktion.', "wp-bepalmet-custom" ) );
         }
 
-        if ( is_multisite() && current_user_can( 'edit_pages' ) ) {
-            $get_global_tables = $wpdb->get_results( "SHOW TABLES LIKE '%bepalmet_opening_hours%'", ARRAY_N );
-            foreach ( $get_global_tables as $one ) {
+        if ( is_multisite() ) {
+            $get_local_tables = $wpdb->get_results( "SHOW TABLES LIKE '%bepalmet_custom%'", ARRAY_N );
+            foreach ( $get_local_tables as $one ) {
+                $tables[] = $one[0];
+            }
+            if ( current_user_can( 'edit_pages' ) ){
+                $get_global_tables = $wpdb->get_results( "SHOW TABLES LIKE '%bepalmet_opening_hours%'", ARRAY_N );
+                foreach ( $get_global_tables as $one ) {
+                    $tables[] = $one[0];
+                }
+            }
+        } else {
+            $get_local_tables = $wpdb->get_results( "SHOW TABLES LIKE '%bepalmet_opening_hours%'", ARRAY_N );
+            foreach ( $get_local_tables as $one ) {
                 $tables[] = $one[0];
             }
         }
