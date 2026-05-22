@@ -122,10 +122,13 @@ $setsize = !$infos_all ? 2 : 3;
 $wrapper_attributes = substr_replace( get_block_wrapper_attributes(), " alignfull", -1, 0 );
 ?>
 
-<?php 
-   function rmspace($buffer){ 
+<?php
+if ( !function_exists( 'rmspace' ) ) {
+    /** @param string $buffer */
+    function rmspace($buffer){ 
         return preg_replace('/(>)\s+|\s+(<)/', '$1$2', $buffer);
-   };
+    };
+}
 ?>
 <?php ob_start("rmspace");  ?>
 <div 
