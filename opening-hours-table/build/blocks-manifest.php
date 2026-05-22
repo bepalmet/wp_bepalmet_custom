@@ -24,7 +24,7 @@ return array(
 				'default' => 'Loading...'
 			)
 		),
-		'textdomain' => 'bepalmet_block',
+		'textdomain' => 'wp-bepalmet-custom',
 		'editorScript' => 'file:./index.js',
 		'style' => 'file:./styles.scss',
 		'render' => 'file:./render.php'
@@ -59,7 +59,7 @@ return array(
 				'source' => 'html'
 			)
 		),
-		'textdomain' => 'text-with-format',
+		'textdomain' => 'wp-bepalmet-custom',
 		'editorScript' => 'file:./index.js',
 		'style' => 'file:./styles.scss'
 	)

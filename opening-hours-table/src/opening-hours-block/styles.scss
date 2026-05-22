@@ -1,59 +1,21 @@
 @use './editor.scss' as *;
 
+@layer opening-hours-table, outer-table, inner-table;
+
 @layer opening-hours-table {
 
-    .bepalmet-custom.opening-hours-table.render.public.opening-hours-table-wrap {
+    div.bepalmet-custom.opening-hours-table.render.public#opening-hours-table-wrap {
         background-color: whitesmoke;
         color: black;
         text-align: center;
         width: 100%;
         overflow: auto;
-        font-size: medium;
-    }
-    table.bepalmet-custom.opening-hours-table.render.public {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+        font-size: smaller;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 150;
+        letter-spacing: 0.05rem;
 
-    @layer outer-table {
-
-        table.bepalmet-custom.opening-hours-table.render.public.outer-table {
-            border: 3px solid black;
-        }
-
-        .bepalmet-custom.opening-hours-table.render.public.outer-table {
-            border-collapse: collapse;
-        }
-        
-        tr.bepalmet-custom.outer-table td.outer-table {
-            border-right: 3px solid black;
-        }
-
-        tr.bepalmet-custom.outer-table td.outer-table:last-child {
-            border-right: none;
-        }
-
-        .bepalmet-custom.outer-table.locations-inner {
-            width: calc( 100% / sibling-count() );
-            min-width: 18rem;
-            table-layout: fixed;
-            height: 100%;
-        }
-
-    }
-
-    @layer panel {
-
-        .bepalmet-custom.small-panel {
-            .render-table.inner-table {
-                color: black;
-                text-align: center;
-                width: 100%;
-                table-layout: fixed;
-            }
-        }
-        .bepalmet-custom.opening-hours-table-header {
+        #opening-hours-table-header {
             font-size: x-large;
             font-weight: bolder;
             text-align: center;
@@ -61,77 +23,111 @@
             margin-bottom: 1rem;
         }
 
-    }
+        @layer outer-table {
 
-    @layer locations-inner {
+            table.bepalmet-custom.opening-hours-table.render.public.outer-table[id*=outer-table] {
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                border: 3px solid black;
+                border-collapse: collapse;
+                
+                td[id*=outer-table]:first-child {
+                    border-right: 3px solid black;
+                }
+
+                td.outer-table.location-header#outer-table-location-header-cell {
+                    font-size: larger;
+                    font-weight: 300;
+                    padding: 1%;
+                }
+                    
+                td.outer-table[id*=outer-table]:last-child {
+                    border-right: none;
+                }
+
+                td.locations-inner#outer-table-locations-inner {
+                    min-width: 18rem;
+                    table-layout: fixed;
+                    width: calc( 100% / sibling-count() );
+                    padding: 0 2.5%;
+                    height: 1px; //just so inner-table height: 100% works
+                }
+
+            }
+
+        }
 
         @layer inner-table {
 
-            @layer contacts {
+            table.bepalmet-custom.opening-hours-table.render.public.inner-table {
+                margin-top: 0.5rem;
+                border-collapse: collapse;
+                width: 100%;
+                height: 100%;
 
-                td.bepalmet-custom.opening-hours-table.render.public.inner-table.body.contacts {
-
-                    .label {
-                        margin-top: 1rem;
-                        margin-right: auto;
-                        margin-left: 5%;
-                        width: fit-content;
-                        min-width: 50%;
-                        max-width: 90%;
-                        text-align: left;
-                    }
-
-                    .value {
-                        margin-bottom: 1rem;
-                        margin-left: auto;
-                        margin-right: 5%;
-                        width: fit-content;
-                        min-width: 50%;
-                        max-width: 90%;
-                        text-align: right;
-                    }
-
+                tr.body#inner-table-body {
+                    height: 100%;
                 }
 
-                @layer times {
+                td.bepalmet-custom.opening-hours-table.render.public.inner-table[id*=inner-table] {
+                    border: 1px solid black;
+                    width: 50%;
 
-                    .bepalmet-custom.opening-hours-table.render.public.inner-table.body.openings.one-day {  
+                    .openings.one-day {  
                         display: flex;
                         justify-content: center;
                         align-content: center;
                         flex-wrap: wrap;
                         margin-right: 0.25rem;
-                    }
+                        
+                        span.weekday-name {
+                            font-weight: bolder;
+                        }
 
-                    .bepalmet-custom.opening-hours-table.render.public.inner-table.body.openings.one-day.weekday-name {
-                        font-weight: bolder;
-                    }
+                        span.times {
+                            flex-direction: column;
 
-                    .bepalmet-custom.opening-hours-table.render.public.inner-table.body.openings.one-day.times {
-                        flex-direction: column;
-                        margin-left: 0.25rem;
+                            span#open-close span#minus:before {
+                                content: '\2212';
+                            }
 
-                        .closed-message {
-                            font-style: italic;
+                            span.closed-message {
+                                font-style: italic;
+                            }
                         }
                     }
+                    
+                    &.contacts {
+                        width: fit-content;
+                        min-width: 50%;
+                        max-width: 90%;
 
+                        .label {
+                            margin-top: 1rem;
+                            margin-right: auto;
+                            margin-left: 5%;
+                            text-align: left;
+                        }
+
+                        .value {
+                            margin-bottom: 1rem;
+                            margin-left: auto;
+                            margin-right: 5%;
+                            text-align: right;
+
+                            &[id*=phone], &[id*=fax], &[id*=mail] {
+                                color: -webkit-link;
+                                color: blue;
+                            }
+                        }
+                    }
                 }
 
-            }
+                #inner-table-location-infos {
+                    height: 1.5rem;
+                }
 
-            table.bepalmet-custom.opening-hours-table.render.public.inner-table {
-                margin-top: 0.5rem;
-                border-collapse: collapse;
-            }
-
-            td.bepalmet-custom.opening-hours-table.render.public.inner-table {
-                border: 1px solid black;
-                width: 50%;
-            }
-
-            tr.bepalmet-custom.opening-hours-table.render.public.inner-table.body {
-                height: 100%;
             }
 
         }

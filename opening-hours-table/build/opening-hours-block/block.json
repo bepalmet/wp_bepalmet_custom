@@ -21,7 +21,7 @@
       "default": "Loading..."
     }
   },
-  "textdomain": "bepalmet_block",
+  "textdomain": "wp-bepalmet-custom",
   "editorScript": "file:./index.js",
   "style": "file:./styles.scss",
   "render": "file:./render.php"

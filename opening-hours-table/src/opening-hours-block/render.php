@@ -71,7 +71,11 @@ $ordered_locations = [];
 foreach ( $locations as $loc ) {
     if ( $loc->LocationName === 'all' ) continue;
     if ( in_array( $loc->LocationName, $show_locations ) ) {
-        $ordered_locations[$locations_order[$loc->LocationName]] = $loc;
+        if ( in_array( $loc->LocationName, $locations_order ) ) {
+            $ordered_locations[$locations_order[$loc->LocationName]] = $loc;
+        } else {
+            $ordered_locations[] = $loc;
+        }
     }
 }
 ksort( $ordered_locations );
@@ -115,33 +119,52 @@ $infos_all = $wpdb->get_results( "SELECT info FROM $table_name_infos WHERE Locat
 
 $setsize = !$infos_all ? 2 : 3;
 
-$wrapper_attributes = get_block_wrapper_attributes();
-
+$wrapper_attributes = substr_replace( get_block_wrapper_attributes(), " alignfull", -1, 0 );
 ?>
-<div class="<?= $wrapper_attributes = get_block_wrapper_attributes(); ?>">
-    <div class="<?= $class_name ?> opening-hours-table-wrap">
+
+<?php 
+   function rmspace($buffer){ 
+        return preg_replace('/(>)\s+|\s+(<)/', '$1$2', $buffer);
+   };
+?>
+<?php ob_start("rmspace");  ?>
+<div 
+    <?= $wrapper_attributes; ?>
+>
+    <div 
+        class="<?= $class_name ?>"
+        id="opening-hours-table-wrap"
+    >
         <div 
-            class="<?= $class_name ?> opening-hours-table-header"
+            class="<?= $class_name ?>"
+            id="opening-hours-table-header"
         >
             <?= $table_header_text ?>
         </div>
-        <table role="treegrid" class="<?= $class_name ?> outer-table">
+        <table 
+            role="treegrid" 
+            class="<?= $class_name ?> outer-table"
+            id="opening-hours-outer-table"
+        >
             <tr
                 role="row"
                 aria-level=1
                 ariaposinset=1
                 aria-setsize=<?= $setsize ?>
                 class="<?= $class_name ?> outer-table locations-label"
+                id="outer-table-locations-label"
             >
                 <?php foreach(array_keys($final_data) as $loc_name): ?>
                     <td
                         class="<?= $class_name ?> outer-table location-header"
+                        id="outer-table-location-header-cell"
                     >
-                        <h2
+                        <div
                             class="<?= $class_name ?> outer-table location-header"
+                            id="outer-table-location-header"
                         >
                             <?= $loc_name ?>
-                        </h2>
+                </div>
                     </td>
                 <?php endforeach; ?>
             </tr>
@@ -151,26 +174,35 @@ $wrapper_attributes = get_block_wrapper_attributes();
                 ariaposinset=2
                 aria-setsize=<?= $setsize ?>
                 class="<?= $class_name ?> outer-table locations-body"
+                id="outer-table-locations-body"
             >
                 <?php foreach($ordered_locations as $loc): ?>
                     <td
                         class="<?= $class_name ?> outer-table locations-inner"
+                        id="outer-table-locations-inner"
                     >
-                        <table role="treegrid" class="<?= $class_name ?> inner-table">
+                        <table 
+                            role="treegrid" 
+                            class="<?= $class_name ?> inner-table"
+                            id="inner-table"
+                        >
                             <tr
                                 role="row"
                                 aria-level=1
                                 ariaposinset=1
                                 aria-setsize=<?= $final_data[$loc->LocationName]['setsize'] ?>
                                 class="<?= $class_name ?> inner-table headers"
+                                id="inner-table-row-headers"
                             >
                                 <td
                                     class="<?= $class_name ?> inner-table headers openings"
+                                    id="inner-table-header-openings"
                                 >
                                     <?= $final_data[$loc->LocationName]['opening_label'] ?>
                                 </td>
                                 <td
                                     class="<?= $class_name ?> inner-table headers contacts"
+                                    id="inner-table-header-contacts"
                                 >
                                     <?= $final_data[$loc->LocationName]['contact_label'] ?>
                                 </td>
@@ -181,34 +213,45 @@ $wrapper_attributes = get_block_wrapper_attributes();
                                 ariaposinset=2
                                 aria-setsize=<?= $setsize ?>
                                 class="<?= $class_name ?> inner-table body"
+                                id="inner-table-body"
                             >
                                 <td
                                     class="<?= $class_name ?> inner-table body openings"
+                                    id="inner-table-opening"
                                 >
                                     <div
                                         class="<?= $class_name ?> inner-table body openings"
+                                        id="inner-table-openings"
                                     >
                                         <?php foreach($final_data[$loc->LocationName]['times'] as $one_day): ?>
                                             <div 
                                                 class="<?= $class_name ?> inner-table body openings one-day"
+                                                id="inner-table-openings-one-day"
                                             >
                                                 <span
                                                     class="<?= $class_name ?> inner-table body openings one-day weekday-name"
+                                                    id="inner-table-openings-one-day-weekday-name"
                                                 >
                                                     <?= $one_day['weekday_name'] ?>:
                                                 </span>
                                                 <span
                                                     class="<?= $class_name ?> inner-table body openings one-day times"
+                                                    id="inner-table-openings-one-day-times"
                                                 >
                                                     <?php if($one_day['is_open']): ?>
                                                         <?php foreach($one_day['content'] as $one_time): ?>
-                                                            <span>
-                                                                <?= substr($one_time['open'], 0, -3) ?> - <?= substr($one_time['close'], 0, -3) ?>
+                                                            <span
+                                                                id="open-close"
+                                                            >
+                                                                <?= substr($one_time['open'], 0, -3) ?>
+                                                                <span id="minus"></span>
+                                                                <?= substr($one_time['close'], 0, -3) ?>
                                                             </span>
                                                          <?php endforeach ?>
                                                     <?php else: ?>
                                                         <span
                                                             class="<?= $class_name ?> closed-message";
+                                                            id="inner-table-openings-one-day-times-closed-message"
                                                         >
                                                             <?= $one_day['content'] ?>
                                                         </span>
@@ -220,15 +263,18 @@ $wrapper_attributes = get_block_wrapper_attributes();
                                 </td>
                                 <td
                                     class="<?= $class_name ?> inner-table body contacts"
+                                    id="inner-table-contacts"
                                 >
                                     <?php foreach($final_data[$loc->LocationName]['contacts'] as $label => $value): ?>
                                         <div
                                             class="<?= $class_name ?> inner-table body contacts label <?= $label ?>"
+                                            id="inner-table-label-<?=  $label ?>"
                                         >
                                             <?= $contact_labels[$label] ?>: 
                                         </div>
                                         <div
                                             class="<?= $class_name ?> inner-table body contacts value <?= $label ?>"
+                                            id="inner-table-contacts-value-<?= $label ?>"
                                         >
                                             <?=  value_link($label, $value) ?>
                                         </div>
@@ -241,14 +287,17 @@ $wrapper_attributes = get_block_wrapper_attributes();
                                 ariaposinset=3
                                 aria-setsize=3
                                 class="<?= $class_name ?> inner-table location-infos"
+                                id="inner-table-location-infos"
                             >
                                 <td
                                     class="<?= $class_name ?> inner-table location-infos"
+                                    id="inner-table-location-infos"
                                     colspan=2
                                 >
                                     <?php foreach($final_data[$loc->LocationName]['infos'] as $one_info): ?>
                                         <div
                                             class="<?= $class_name ?> location-infos one-info"
+                                            id="inner-table-one-info"
                                         >
                                             <?= $one_info['info'] ?>
                                         </div>
@@ -265,14 +314,17 @@ $wrapper_attributes = get_block_wrapper_attributes();
                 ariaposinset=3
                 aria-setsize=3
                 class="<?= $class_name ?> outer-table info-all"
+                id="outer-table-info-all"
             >
                 <td 
                 class="<?= $class_name ?> outer-table info-all inner"
+                id="outer-table-info-all-inner"
                 colspan=<?= count( $final_data ) ?>
                 >
                     <?php foreach($infos_all as $info): ?>
                         <div
                             class="<?= $class_name ?> outer-table info-all inner"
+                            id="outer-table-info-all"
                         >
                             <?= $info['info'] ?>
                         </div>
@@ -282,3 +334,4 @@ $wrapper_attributes = get_block_wrapper_attributes();
         </table>
     </div>
 </div>
+<?php ob_end_flush(); ?>

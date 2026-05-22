@@ -1,2 +1,554 @@
-.opening-hours-settings-sidebar{background:#fff;border-left:1px solid #e0e0e0;bottom:0;color:#1e1e1e;overflow:hidden;position:fixed;right:0;top:0}@media(min-width:600px){.opening-hours-settings-sidebar{-webkit-overflow-scrolling:touch;overflow:auto;top:110px}}@media(min-width:782px){.opening-hours-settings-sidebar{top:96px}}@media(min-width:600px){.opening-hours-settings-sidebar{display:block}}.opening-hours-settings-sidebar>.components-panel{border-left:0;border-right:0;margin-bottom:-1px;margin-top:-1px}.opening-hours-settings-sidebar>.components-panel>.components-panel__header{background:#e0e0e0}.opening-hours-settings-sidebar .block-editor-block-inspector__card{margin:0}div.bepalmet-custom-sidebar.toggle-button.wrap{align-content:start;background-color:#d3d3d3;display:grid;height:100%;justify-items:end;margin:0;overflow:visible;position:fixed;right:0}@media(min-width:600px){div.bepalmet-custom-sidebar.toggle-button.wrap{-webkit-overflow-scrolling:touch;top:110px}}@media(min-width:782px){div.bepalmet-custom-sidebar.toggle-button.wrap{top:96px}}@media(min-width:600px){div.bepalmet-custom-sidebar.toggle-button.wrap{display:grid}}div.bepalmet-custom-sidebar.toggle-button.wrap button.components-button.bepalmet-custom-sidebar.toggle-button:hover{background:none}div.bepalmet-custom-sidebar.toggle-button.wrap button.components-button.bepalmet-custom-sidebar.toggle-button{border:none;box-shadow:none;color:#000;outline:0;position:absolute;z-index:1001}@keyframes slide{to{right:0}}div.bepalmet-custom-sidebar.toggle-button.wrap div.sidebar-panel.tab-panel-wrap{animation:slide .5s forwards;height:100%;position:relative;right:-100%;width:280px;z-index:1000}div.bepalmet-custom-sidebar.toggle-button.wrap div.one-panel{padding:.5rem 2rem}div.bepalmet-custom-sidebar.toggle-button.wrap div.header{font-size:larger;padding:.75rem 2rem}.opening-hours-settings-header{align-items:center;background:#fff;border-bottom:1px solid #e0e0e0;display:flex;height:64px;justify-content:space-between;position:sticky;right:0;top:0}@media(min-width:600px){.opening-hours-settings-header{padding:24px;position:sticky;top:46px}}@media(min-width:782px){.opening-hours-settings-header{top:32px}}.opening-hours-settings-header{left:0}@media(min-width:783px){.opening-hours-settings-header{left:160px}.auto-fold .opening-hours-settings-header{left:36px}}@media(min-width:961px){.auto-fold .opening-hours-settings-header{left:160px}}.folded .opening-hours-settings-header{left:0}@media(min-width:783px){.folded .opening-hours-settings-header{left:36px}}body.is-fullscreen-mode .opening-hours-settings-header{left:0!important}.opening-hours-settings-header__title{font-size:16px;margin-right:auto;padding:0 20px}.loader-wrap{align-items:center;display:none;position:relative}.loader-wrap.is-loading{display:block}.loader{animation:spin 2s linear infinite;border:.5rem solid #f3f3f3;border-radius:50%;border-top-color:#3498db;height:2.5rem;width:2.5rem}@keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}.render-table.opening-hours-table-wrap{background-color:#f5f5f5;color:#000;font-size:small;overflow:scroll;text-align:center;width:100%}.render-table table{margin-left:auto;margin-right:auto;width:90%}.render-table.weekday-name{font-weight:bolder}.render-table.closed-message{font-style:italic}@layer outer-table{table.render-table.outer-table{border:3px solid #000}.render-table.outer-table{border-collapse:collapse}tr.outer-table td.outer-table{border-right:3px solid #000}tr.outer-table td.outer-table:last-child{border-right:none}.outer-table.locations-inner{height:100%;min-width:18rem;table-layout:fixed;width:calc(100%/sibling-count())}}.small-panel .render-table.inner-table{color:#000;table-layout:fixed;text-align:center;width:100%}.render-table.opening-hours-table-header{font-size:x-large;font-weight:bolder;margin-bottom:1rem;padding-top:1.5rem;text-align:center}@layer inner-table, locations-inner;@layer locations-inner{@layer inner-table{td.render-table.inner-table{width:50%}table.render-table.inner-table{margin-top:.5rem}.render-table.inner-table{border:1px solid #000;border-collapse:collapse}div.render-table.contact.label{margin:0 5%;text-align:left}div.render-table.contact.value{margin:0 5%;text-align:right}}div.one-day.outer{margin-bottom:1rem;margin-top:1rem}}.drag-hint{font-size:small;font-style:italic;margin-bottom:2%}.opening-hours-table-edit.modal button{margin:0 1rem}.opening-hours-table-edit.header{margin:.5rem 1rem}.opening-hours-table-edit.header-wrap{display:flex}.opening-hours-table-edit.header-wrap .heading-wrap{float:left;margin-left:0;margin-right:auto;order:1}.opening-hours-table-edit.header-wrap .button-edit{float:right;order:2}.opening-hours-table-edit.header-wrap .button-delete{float:right;order:3}.opening-hours-table-edit.panel.body{margin:1rem .5rem}.opening-hours-table-edit.panel.body>div{display:flex;justify-content:flex-start}.opening-hours-table-edit.panel.body button.edit{justify-self:flex-end;margin-right:.5rem}.opening-hours-table-edit.panel.body button.delete{justify-self:flex-end}.opening-hours-table-edit.panel.body .one-info,.opening-hours-table-edit.panel.body .one-time{width:100%}.opening-hours-table-edit .edit-wrap,.opening-hours-table-edit .new-wrap{align-items:center;display:flex;margin-bottom:1rem;width:100%}.opening-hours-table-edit .edit-wrap>*,.opening-hours-table-edit .new-wrap>*{margin:0 1rem}.opening-hours-table-edit .edit-wrap>div,.opening-hours-table-edit .new-wrap>div{align-items:center;width:100%}.opening-hours-table-edit .edit-wrap>div.times.time-picker,.opening-hours-table-edit .new-wrap>div.times.time-picker{display:flex}.opening-hours-table-edit .edit-wrap>div.times.time-picker>fieldset,.opening-hours-table-edit .new-wrap>div.times.time-picker>fieldset{margin:0 1rem}.opening-hours-table-edit.panel.contacts.row{display:flex;justify-content:space-between}.opening-hours-table-edit.panel.contacts.row div.components-toggle-control{justify-self:left;width:10%}.opening-hours-table-edit.panel.contacts.row div.contact.value{justify-self:center;margin-left:auto;margin-right:auto;max-width:50%;min-height:1.5rem;text-align:center}.opening-hours-table-edit.panel.contacts.row div.contact.value.inactive{font-style:italic;opacity:.5}.opening-hours-table-edit.panel.contacts.row button.components-button{justify-self:right}.opening-hours-settings-places{margin-right:1rem}button.bepalmet-custom.navigator.back-button,button.bepalmet-custom.navigator.screen-button{box-shadow:none}div.bepalmet-custom.navigator.edit-screen-wrap{display:flex}.bepalmet-custom-settings{height:100%}body.block-editor-page,html.wp-toolbar{background:#fff}body.block-editor-page #wpcontent{padding-left:0}body.block-editor-page #wpbody-content{padding-bottom:0}body.block-editor-page #wpbody-content>div:not(.block-editor):not(#screen-meta),body.block-editor-page #wpfooter{display:none}body.block-editor-page .a11y-speak-region{left:-1px;top:-1px}body.block-editor-page ul#adminmenu a.wp-has-current-submenu:after,body.block-editor-page ul#adminmenu>li.current>a.current:after{border-right-color:#fff}body.block-editor-page .media-frame select.attachment-filters:last-of-type{max-width:100%;width:auto}.opening-hours-settings-block-editor{min-height:calc(100vh - 32px)}.editor-styles-wrapper{width:100%}@media(min-width:600px){.editor-styles-wrapper{width:calc(100% - 280px)}}.editor-styles-wrapper{color:#1e1e1e;font-family:"sans-serif";font-size:16px;line-height:1.8}.components-modal__frame,.opening-hours-settings-block-editor{box-sizing:border-box}.components-modal__frame *,.components-modal__frame :after,.components-modal__frame :before,.opening-hours-settings-block-editor *,.opening-hours-settings-block-editor :after,.opening-hours-settings-block-editor :before{box-sizing:inherit}.block-editor-block-breadcrumb{background-color:#fff;border-top:1px solid #ddd;bottom:0;padding:5px;position:absolute;width:100%;z-index:1}.opening-hours-settings-places.is-loading{opacity:.5;pointer-events:none}
-.bepalmet-text-with-format.format-controls-wrap{margin:1rem 0}.bepalmet-text-with-format.block-list-wrap{background:#fff;border:1px solid gray;border-radius:2px;padding:1rem}.bepalmet-rich-text{height:100%;width:100%}
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/opening-hours-settings/styles.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * Colors
+ */
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Typography
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Radius scale.
+ */
+/**
+ * Elevation scale.
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Mobile specific styles
+ */
+/**
+ * Editor styles.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+ * Typography
+ */
+/**
+ * Breakpoints & Media Queries
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Long content fade mixin
+ *
+ * Creates a fading overlay to signify that the content is longer
+ * than the space allows.
+ */
+/**
+ * Breakpoint mixins
+ */
+/**
+ * Focus styles.
+ */
+/**
+ * Applies editor left position to the selector passed as argument
+ */
+/**
+ * Styles that are reused verbatim in a few places
+ */
+/**
+ * Allows users to opt-out of animations via OS-level preferences.
+ */
+/**
+ * Reset default styles for JavaScript UI based pages.
+ * This is a WP-admin agnostic reset
+ */
+/**
+ * Reset the WP Admin page styles for Gutenberg-like pages.
+ */
+.opening-hours-settings-sidebar {
+  background: #fff;
+  border-left: 1px solid #e0e0e0;
+  bottom: 0;
+  color: #1e1e1e;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+@media (min-width: 600px) {
+  .opening-hours-settings-sidebar {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    top: 110px;
+  }
+}
+@media (min-width: 782px) {
+  .opening-hours-settings-sidebar {
+    top: 96px;
+  }
+}
+@media (min-width: 600px) {
+  .opening-hours-settings-sidebar {
+    display: block;
+  }
+}
+.opening-hours-settings-sidebar > .components-panel {
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: -1px;
+  margin-top: -1px;
+}
+.opening-hours-settings-sidebar > .components-panel > .components-panel__header {
+  background: #e0e0e0;
+}
+.opening-hours-settings-sidebar .block-editor-block-inspector__card {
+  margin: 0;
+}
+div.bepalmet-custom-sidebar.toggle-button.wrap {
+  position: fixed;
+  right: 0;
+  height: 100%;
+  margin: 0;
+  overflow: visible;
+  display: grid;
+  justify-items: end;
+  align-content: start;
+  background-color: lightgrey;
+}
+@media (min-width: 600px) {
+  div.bepalmet-custom-sidebar.toggle-button.wrap {
+    -webkit-overflow-scrolling: touch;
+    top: 110px;
+  }
+}
+@media (min-width: 782px) {
+  div.bepalmet-custom-sidebar.toggle-button.wrap {
+    top: 96px;
+  }
+}
+@media (min-width: 600px) {
+  div.bepalmet-custom-sidebar.toggle-button.wrap {
+    display: grid;
+  }
+}
+div.bepalmet-custom-sidebar.toggle-button.wrap button.components-button.bepalmet-custom-sidebar.toggle-button:hover {
+  background: none;
+}
+div.bepalmet-custom-sidebar.toggle-button.wrap button.components-button.bepalmet-custom-sidebar.toggle-button {
+  position: absolute;
+  border: none;
+  box-shadow: none;
+  outline: 0;
+  color: black;
+  z-index: 1001;
+}
+@keyframes slide {
+  100% {
+    right: 0;
+  }
+}
+div.bepalmet-custom-sidebar.toggle-button.wrap div.sidebar-panel.tab-panel-wrap {
+  position: relative;
+  right: -100%;
+  animation: slide 0.5s forwards;
+  height: 100%;
+  width: 280px;
+  z-index: 1000;
+}
+div.bepalmet-custom-sidebar.toggle-button.wrap div.one-panel {
+  padding: 0.5rem 2rem;
+}
+div.bepalmet-custom-sidebar.toggle-button.wrap div.header {
+  padding: 0.75rem 2rem;
+  font-size: larger;
+}
+.opening-hours-settings-header {
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  left: 0;
+  position: sticky;
+  right: 0;
+  top: 0;
+}
+@media (min-width: 600px) {
+  .opening-hours-settings-header {
+    padding: 24px;
+    position: sticky;
+    top: 46px;
+  }
+}
+@media (min-width: 782px) {
+  .opening-hours-settings-header {
+    top: 32px;
+  }
+}
+.opening-hours-settings-header { /* Set left position when auto-fold is not on the body element. */
+  left: 0;
+}
+@media (min-width: 783px) {
+  .opening-hours-settings-header {
+    left: 160px;
+  }
+}
+.auto-fold .opening-hours-settings-header { /* Auto fold is when on smaller breakpoints, nav menu auto collapses. */ }
+@media (min-width: 783px) {
+  .auto-fold .opening-hours-settings-header {
+    left: 36px;
+  }
+}
+@media (min-width: 961px) {
+  .auto-fold .opening-hours-settings-header {
+    left: 160px;
+  }
+}
+/* Sidebar manually collapsed. */
+.folded .opening-hours-settings-header {
+  left: 0;
+}
+@media (min-width: 783px) {
+  .folded .opening-hours-settings-header {
+    left: 36px;
+  }
+}
+body.is-fullscreen-mode .opening-hours-settings-header {
+  left: 0 !important;
+}
+.opening-hours-settings-header__title {
+  font-size: 16px;
+  padding: 0 20px;
+  margin-right: auto;
+}
+.loader-wrap {
+  display: none;
+  position: relative;
+  align-items: center;
+}
+.loader-wrap.is-loading {
+  display: block;
+}
+.loader {
+  border: 0.5rem solid #f3f3f3;
+  border-top: 0.5rem solid #3498db;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*
+*  Mostly for EditOpeningHours and final table
+*/
+/**
+*   Styles for OpeningHoursTable
+*/
+.render-table.opening-hours-table-wrap {
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  width: 100%;
+  overflow: scroll;
+  font-size: small;
+}
+.render-table table {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.render-table.weekday-name {
+  font-weight: bolder;
+}
+.render-table.closed-message {
+  font-style: italic;
+}
+@layer outer-table {
+  table.render-table.outer-table {
+    border: 3px solid black;
+  }
+  .render-table.outer-table {
+    border-collapse: collapse;
+  }
+  tr.outer-table td.outer-table {
+    border-right: 3px solid black;
+  }
+  tr.outer-table td.outer-table:last-child {
+    border-right: none;
+  }
+  .outer-table.locations-inner {
+    width: calc(100% / sibling-count());
+    min-width: 18rem;
+    table-layout: fixed;
+    height: 100%;
+  }
+}
+.small-panel .render-table.inner-table {
+  color: black;
+  text-align: center;
+  width: 100%;
+  table-layout: fixed;
+}
+.render-table.opening-hours-table-header {
+  font-size: x-large;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+@layer inner-table, locations-inner;
+@layer locations-inner {
+  @layer inner-table {
+    td.render-table.inner-table {
+      width: 50%;
+    }
+    table.render-table.inner-table {
+      margin-top: 0.5rem;
+    }
+    .render-table.inner-table {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    div.render-table.contact.label {
+      margin-top: 2rem;
+      margin: 0 5%;
+      text-align: left;
+    }
+    div.render-table.contact.value {
+      margin: 0 5%;
+      text-align: right;
+    }
+  }
+  div.one-day.outer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+/**
+*   styles for EditOpeningHours
+*/
+.drag-hint {
+  font-style: italic;
+  font-size: small;
+  margin-bottom: 2%;
+}
+.opening-hours-table-edit.modal button {
+  margin: 0 1rem;
+}
+.opening-hours-table-edit.header {
+  margin: 0.5rem 1rem;
+}
+.opening-hours-table-edit.header-wrap {
+  display: flex;
+}
+.opening-hours-table-edit.header-wrap .heading-wrap {
+  float: left;
+  margin-right: auto;
+  margin-left: 0;
+  order: 1;
+}
+.opening-hours-table-edit.header-wrap .button-edit {
+  float: right;
+  order: 2;
+}
+.opening-hours-table-edit.header-wrap .button-delete {
+  float: right;
+  order: 3;
+}
+.opening-hours-table-edit.panel.body {
+  margin: 1rem 0.5rem;
+}
+.opening-hours-table-edit.panel.body > div {
+  display: flex;
+  justify-content: flex-start;
+}
+.opening-hours-table-edit.panel.body button.edit {
+  justify-self: flex-end;
+  margin-right: 0.5rem;
+}
+.opening-hours-table-edit.panel.body button.delete {
+  justify-self: flex-end;
+}
+.opening-hours-table-edit.panel.body .one-time {
+  width: 100%;
+}
+.opening-hours-table-edit.panel.body .one-info {
+  width: 100%;
+}
+.opening-hours-table-edit .edit-wrap, .opening-hours-table-edit .new-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.opening-hours-table-edit .edit-wrap > *, .opening-hours-table-edit .new-wrap > * {
+  margin: 0 1rem;
+}
+.opening-hours-table-edit .edit-wrap > div, .opening-hours-table-edit .new-wrap > div {
+  width: 100%;
+  align-items: center;
+}
+.opening-hours-table-edit .edit-wrap > div.times.time-picker, .opening-hours-table-edit .new-wrap > div.times.time-picker {
+  display: flex;
+}
+.opening-hours-table-edit .edit-wrap > div.times.time-picker > fieldset, .opening-hours-table-edit .new-wrap > div.times.time-picker > fieldset {
+  margin: 0 1rem;
+}
+.opening-hours-table-edit.panel.contacts.row {
+  display: flex;
+  justify-content: space-between;
+}
+.opening-hours-table-edit.panel.contacts.row div.components-toggle-control {
+  justify-self: left;
+  width: 10%;
+}
+.opening-hours-table-edit.panel.contacts.row div.contact.value {
+  justify-self: center;
+  max-width: 50%;
+  text-align: center;
+  min-height: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.opening-hours-table-edit.panel.contacts.row div.contact.value.inactive {
+  opacity: 0.5;
+  font-style: italic;
+}
+.opening-hours-table-edit.panel.contacts.row button.components-button {
+  justify-self: right;
+}
+.opening-hours-settings-places {
+  margin-right: 1rem;
+}
+button.bepalmet-custom.navigator.back-button, button.bepalmet-custom.navigator.screen-button {
+  box-shadow: none;
+}
+div.bepalmet-custom.navigator.edit-screen-wrap {
+  display: flex;
+}
+.bepalmet-custom-settings {
+  height: 100%;
+}
+html.wp-toolbar {
+  background: #fff;
+}
+body.block-editor-page {
+  background: #fff;
+}
+body.block-editor-page #wpcontent {
+  padding-left: 0;
+}
+body.block-editor-page #wpbody-content {
+  padding-bottom: 0;
+}
+body.block-editor-page {
+  /* We hide legacy notices in Gutenberg Based Pages, because they were not designed in a way that scaled well.
+     Plugins can use Gutenberg notices if they need to pass on information to the user when they are editing. */
+}
+body.block-editor-page #wpbody-content > div:not(.block-editor):not(#screen-meta) {
+  display: none;
+}
+body.block-editor-page #wpfooter {
+  display: none;
+}
+body.block-editor-page .a11y-speak-region {
+  left: -1px;
+  top: -1px;
+}
+body.block-editor-page ul#adminmenu a.wp-has-current-submenu::after,
+body.block-editor-page ul#adminmenu > li.current > a.current::after {
+  border-right-color: #fff;
+}
+body.block-editor-page .media-frame select.attachment-filters:last-of-type {
+  width: auto;
+  max-width: 100%;
+}
+.opening-hours-settings-block-editor {
+  min-height: calc(100vh - 32px);
+}
+.editor-styles-wrapper {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .editor-styles-wrapper {
+    width: calc(100% - 280px);
+  }
+}
+.editor-styles-wrapper {
+  font-family: "sans-serif";
+  font-size: 16px;
+  line-height: 1.8;
+  color: #1e1e1e;
+}
+.opening-hours-settings-block-editor,
+.components-modal__frame {
+  box-sizing: border-box;
+}
+.opening-hours-settings-block-editor *,
+.opening-hours-settings-block-editor *::before,
+.opening-hours-settings-block-editor *::after,
+.components-modal__frame *,
+.components-modal__frame *::before,
+.components-modal__frame *::after {
+  box-sizing: inherit;
+}
+.block-editor-block-breadcrumb {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  padding: 5px;
+  background-color: #fff;
+  width: 100%;
+  border-top: 1px solid #dddddd;
+}
+.opening-hours-settings-places.is-loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/text-with-format/styles.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************/
+.bepalmet-text-with-format.format-controls-wrap {
+  margin: 1rem 0;
+}
+.bepalmet-text-with-format.block-list-wrap {
+  background: white;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+.bepalmet-rich-text {
+  height: 100%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map*/
