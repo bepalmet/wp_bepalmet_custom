@@ -4,7 +4,7 @@
 
 @layer opening-hours-table {
 
-    div.bepalmet-custom.opening-hours-table.render.public#opening-hours-table-wrap {
+    div.bepalmet-custom.opening-hours-table.render.public#opening-hours-table-wrap:not([id^=wp-calendar]):not([id^=add_payment_method]) {
         background-color: whitesmoke;
         color: black;
         text-align: center;
